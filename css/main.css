@@ -2,25 +2,6 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
-/*
-<button style="padding: 20pt; background-color:#F2BAC9 ;color: white">#F2BAC9 </button>
-<p>Hover Button Stroke & Link Background</p>
-
-<button style="padding: 20pt; background-color:#B3B8B7 ">#B3B8B7 </button>
-<p>Hover Picture & Button Background</p>
-
-<button style="padding: 20pt; background-color:#E97A7A  ">#E97A7A  </button>
-<p>Button Default Background</p>
-
-<button style="padding: 20pt; background-color:#D8A7B1  ">#D8A7B1  </button>
-<p>Hover & Focus Input Background</p>
-
-<button style="padding: 20pt; background-color:#000000   ;color: white">#000000  </button>
-<p>Default Stroke & Font Storke in Button</p>
-
-<button style="padding: 20pt; background-color:#2F2F2F  ;color: white">#2F2F2F </button>
-<p>Default Font Stroke</p>
-*/
 body {
 	background-color: #F1E7D9;
 }
@@ -75,6 +56,18 @@ nav {
 	flex: 1;
 }
 
+.nav_but {
+	border: none;
+	color: white;
+	font-family: "arial black";
+}
+
+.nav_logo {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	vertical-align: middle;
+}
+
 .styleGuide-header-nav .nav_but:hover {
 	background-color: #F2BAC9;
 }
@@ -111,7 +104,7 @@ a {
 a:hover {
 	padding: 0.5rem;
 	background: #F2BAC9;
-	color: #2F2F2F;
+	color: #CD2020;
 	text-decoration-line: none;
 	-webkit-transition-property: background-color;
 	transition-property: background-color;
@@ -120,28 +113,6 @@ a:hover {
 } /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
 .intext-nav {
 	text-decoration-line: underline;
-}
-
-input {
-	background: white;
-	margin: 0.5rem;
-	mmargin-left: 0;
-	padding: 0.5rem;
-	border-color: #5E2A00;
-}
-
-input:hover { /*Same as button below*/
-	background: #F2F4B2;
-	color: #F2F4B2;
-	-webkit-transition-property: background-color;
-	transition-property: background-color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
-input:focus {
-	background: #F2F4B2;
-	color: #000000;
 }
 
 h1 {
@@ -200,7 +171,7 @@ button {
 	padding-left: 0.8rem;
 	padding-right: 0.8rem;
 	background: #E97A7A;
-	border-color: #6C1234;
+	border-color: #CD2020;
 	color: white;
 	font-family: "arial black";
 }
@@ -208,7 +179,7 @@ button {
 button:hover { /*Same as input above*/
 	background: #F2BAC9;
 	border-color: red;
-	color: #E97A7A;
+	color: #CD2020;
 	-webkit-transition-property: background-color, color;
 	transition-property: background-color, color;
 	-webkit-transition-duration: 0.25s;
@@ -219,40 +190,6 @@ button:hover { /*Same as input above*/
   INTERACTIVE ELEMENTS -------------------
 */
 /* Styling for the navigation button */
-.button-nav {
-	display: inline-block;
-	margin-top: 0.8rem;
-	margin-bottom: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	padding: 0.5rem;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	color: #5E2A00;
-	background: #F6B229;
-	border-color: #5E2A00;
-	text-decoration: none;
-}
-
-.button-nav:hover, .button-nav:focus {
-	margin-top: 0.8rem;
-	margin-bottom: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	padding: 0.5rem;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	background-color: #fb401f;
-	-webkit-transition-property: background-color, color;
-	transition-property: background-color, color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
-.butForForms-nav {
-	font-family: Cambria, "serif";
-}
-
 .inputLab-nav {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
@@ -263,8 +200,9 @@ button:hover { /*Same as input above*/
 }
 
 .imgLink-nav:hover {
-	-webkit-box-shadow: 12px 12px #fb401f;
-	box-shadow: 12px 12px #fb401f;
+	background: #F1E7D9;
+	-webkit-box-shadow: 12px 12px #E97A7A;
+	box-shadow: 12px 12px #E97A7A;
 }
 
 /* 
@@ -312,19 +250,6 @@ button:hover { /*Same as input above*/
 	margin-bottom: 1em;
 	margin-left: 0.5rem;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
-}
-
-.nav_but {
-	background: #FFD7BF;
-	border: none;
-	color: #5E2A00;
-	font-family: "arial black";
-}
-
-.nav_logo {
-	margin-left: 1rem;
-	margin-bottom: 1rem;
-	vertical-align: middle;
 }
 
 .projectsList_container {
@@ -395,99 +320,6 @@ button:hover { /*Same as input above*/
 	margin-bottom: 1rem;
 }
 
-.checkout-nav {
-	width: 100%;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-}
-
-.checkout-cart {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-}
-
-.checkout-nav .heading3 {
-	margin-top: 2rem;
-}
-
-.checkout-signup .heading4, .checkout-login .heading4 {
-	margin-bottom: 1rem;
-}
-
-.checkout-payment-container {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.checkout-signup {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-}
-
-.checkout-login {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	margin-top: 2rem;
-}
-
-.checkout-signup .heading3 {
-	margin-top: 0;
-	margin-bottom: 1.5rem;
-}
-
-@media (max-width: 1200px) {
-	.checkout-nav {
-		width: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
-}
-@media (min-width: 1200px) {
-	.checkout-payment-container {
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-		margin-left: 2rem;
-		margin-bottom: 2rem;
-		margin-top: 2rem;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
-	.checkout-login {
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-		margin-top: 5rem;
-	}
-}
 /* 
   COMBINED ELEMENTS -------------------
 */
