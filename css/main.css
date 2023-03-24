@@ -260,6 +260,10 @@ button:hover {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .projectsList_container div {
@@ -272,8 +276,8 @@ button:hover {
 	flex: 1;
 	min-width: 200px;
 	padding: 1rem;
-	color: #000000;
-	background-color: #F6B229;
+	color: white;
+	background-color: #E97A7A;
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
@@ -285,8 +289,8 @@ button:hover {
 	}
 }
 .projectsList:hover {
-	background-color: #FB401F;
-	color: white;
+	background-color: #F2BAC9;
+	color: #CD2020;
 	-webkit-transition-property: background-color, color;
 	transition-property: background-color, color;
 	-webkit-transition-duration: 0.25s;
