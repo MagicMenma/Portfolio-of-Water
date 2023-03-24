@@ -185,7 +185,7 @@ button {
 	font-family: "arial black";
 }
 
-button:hover { /*Same as input above*/
+button:hover {
 	background: $hover;
 	border-color: red;
 	color: $hoverFont;
@@ -209,7 +209,9 @@ button:hover { /*Same as input above*/
 }
 
 .imgLink-nav:hover {
-    background: #F1E7D9;
+    background: none;
+    color: none;
+    text-decoration: none;
 	-webkit-box-shadow: 12px 12px $btnBg;
 	        box-shadow: 12px 12px $btnBg;
 }
