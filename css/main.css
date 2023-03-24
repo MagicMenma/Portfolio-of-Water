@@ -1,0 +1,430 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+body{
+    background-color: #FFD7BF;
+}
+
+.headingLogo-nav{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.heading-nav{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.header-nav{
+    position: sticky;
+    top: 0px;
+    background: #FFD7BF;
+}
+nav{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.styleGuide-header-nav{
+    position: sticky;
+    top: 0px;
+    background: #F6B229;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.styleGuide-header-nav .nav_but{
+    background-color: #F6B229;
+    flex: 1;
+}
+.styleGuide-header-nav .nav_but:hover{
+    background-color: #FB401F;
+}
+.bodyBlock {
+    font-family: sans-serif;
+    padding-top: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.introduce-nav{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+    margin-bottom: 80pt;
+}
+
+a {
+    padding: 0.5rem;
+    color: #2e1f32;
+    text-decoration-line: none;
+    font-family:"Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+a:hover { 
+    padding: 0.5rem;
+    background:#fb401f;
+    color: white;
+    text-decoration-line: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
+.intext-nav{
+    text-decoration-line:underline;
+}
+input{
+    background:white;
+    margin: 0.5rem;
+    mmargin-left: 0;
+    padding: 0.5rem;
+    border-color:#5E2A00;
+}
+input:hover{ /*Same as button below*/
+    background: #F2F4B2;
+    color: #F2F4B2;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+input:focus{
+    background: #F2F4B2;
+    color: #000000;
+}
+
+input[type="radio"] {
+    /*https://www.quackit.com/css/properties/webkit/css_-webkit-appearance.cfm*/
+    -webkit-appearance: none;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid #5E2A00;
+}
+input[type="radio"]:hover {
+    background: #FB401F;
+}
+input[type="radio"]:checked{
+    vertical-align: middle;
+    background: #FB401F;
+}
+
+input[type="Number"],input[type="Password"], input[type="email"] {
+    width: 19rem;
+}
+input[class="firstName"], input[class="lastName"], input[class="expDate"], input[class="cvvCode"]{
+    width: 8.2rem;
+}
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-outer-spin-button*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    /*https://www.w3docs.com/learn-css/css-appearance-property.html*/
+    -moz-appearance: textfield;
+}
+
+h1 {
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h2 {
+    margin-top: 6rem;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h3 {
+    font-style: italic;
+    margin-top: 1rem;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h4 {
+    margin-bottom: 0.25rem;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+
+p {
+    
+    margin-top: 0;
+    font-family:"Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+    width: 75%;
+}
+li,ol,label,input {
+    font-family:"Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+legend{
+    font-size: 1.5rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+
+
+
+nav a:hover, nav a:focus {
+    text-decoration: none;
+}
+code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+}
+button{
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background:#F6B229;
+    border-color:#5E2A00;
+    color:#5E2A00;
+    font-family:"arial black";
+}
+button:hover{ /*Same as input above*/
+    background: #f4651f;
+    border-color: #fb401f;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+}
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+/* Styling for the navigation button */
+.button-nav {
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    color:#5E2A00;
+    background:#F6B229;
+    border-color:#5E2A00;
+    text-decoration: none;
+}
+.button-nav:hover, .button-nav:focus {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: #fb401f;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+.butForForms-nav{
+    font-family: Cambria, "serif";
+}
+.inputLab-nav{
+    font-family:"Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.imgLink-nav{
+    transition: all 0.2s ease-out;
+}
+.imgLink-nav:hover{
+    box-shadow: 12px 12px #fb401f;
+}
+/* 
+  TEXT ELEMENTS -------------------
+*/
+.heading1 {
+    font-size: 4rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.heading2 {
+    font-size: 3rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.heading3 {
+    font-size: 2rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.heading3-nav {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+    margin-right: 2rem;
+}
+.heading4 {
+    font-size: 1rem;
+    font-style: normal;
+    margin: 0;
+    font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+.p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5rem;
+    font-family:"Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+.nav_but{
+    background:#FFD7BF;
+    border: none;
+    color:#5E2A00;
+    font-family:"arial black";
+    
+}
+.nav_logo{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+}
+.productList_container{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+}
+.productList_container div{
+    margin-right: 1rem;
+}
+.productList {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    color: #000000;
+    background-color: #F6B229;
+    text-decoration-line: none;
+    font-family:"Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+@media (max-width: 1200px) {
+    .productList_container{
+        flex-wrap: wrap;
+    }
+}
+.productList:hover {
+    background-color:#FB401F;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.25s
+}
+.product_listing:hover {
+    background: none;
+    transition-property: color;
+    transition-duration: 0.25s
+}
+.productList img{
+    width: 100%;
+}
+
+.colourCard_container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.colourCard_container div{
+    width: 16.66%;
+}
+
+.cartCard{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-nav{
+    width: 100%;
+    display: inline-flex;
+}
+.checkout-cart{
+    flex:1;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.checkout-nav .heading3{
+    margin-top: 2rem;
+}
+.checkout-signup .heading4, .checkout-login .heading4{
+    margin-bottom: 1rem;
+}
+.checkout-payment-container{
+    flex:1;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+.checkout-signup{
+    flex: 1;
+}
+.checkout-login{
+    flex: 1;
+    margin-top: 2rem;
+}
+.checkout-signup .heading3{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .checkout-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1200px) {
+    .checkout-payment-container{
+        flex:1;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkout-login{
+        flex: 1;
+        margin-top: 5rem;
+    }
+}
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+footer{
+    margin-top: 10rem;
+    background-color: #F4651F;
+    color: white;
+}
+.footer-nav{
+    display: inline-flex;
+}
+.footer-text{
+    flex:1;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.footer-link-container{
+    flex:1;
+    margin: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer-link{
+    color: white;
+    margin-right: 10%;
+}
+
+
