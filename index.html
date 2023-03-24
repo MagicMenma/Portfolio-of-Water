@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Chiliken - Our Style Guide</title>
+<title>Qiaohui Xu - The Art of Webcraft</title>
 <link href="css/main.css" rel="stylesheet">
 </head>
     
 <body>
     <img class="headingLogo-nav" src="img/logo_small.png" alt="" width="100">
-    <h1 class="heading-nav">Chiliken - Our Style Guide</h1>
-    <p class="p">Take a look at our fresh looking website design while enjoying the spicy chicken!</p>
+    <h1 class="heading-nav">Qiaohui Xu - The Art of Webcraft</h1>
+    <p class="p">Prepare to be DAZZLED! This style guide is your backstage pass to the design elements and styles that make my portfolio website stand out from the crowd. From bold typography to eye-catching color schemes, I'm excited to share my secrets with you.</p>
 
     <nav class="styleGuide-header-nav"> 
         <a class="nav_but" href="#">Home</a>  |
         <a class="nav_but" href="#interactive_elements">Interactive Elements</a>  |
         <a class="nav_but" href="#text_elements">Text Elements</a>  |
         <a class="nav_but" href="#combined_elements">Combined Elements</a>  |
-        <a class="nav_but" href="productList.html">Product Listing Page</a>  |
-        <a class="nav_but" href="checkout.html">Checkout Page</a>  |
+        <a class="nav_but" href="projectsList.html">Projects Listing Page</a>  |
         <a class="nav_but" href="#citations">Citations</a>
     </nav>
 
@@ -105,8 +104,6 @@
             <input type="radio" id="select2" name="selection" value="select2">
             <label for="select2">Selection 2</label><br>
         </form>
-
-
     </section>
 
 
@@ -153,7 +150,7 @@
             <h4>Sample code:</h4>
             <code>&lt;p class="para-nav"&gt;Default paragraphs&lt;/p&gt;</code>
             <h4>Rendered element:</h4>
-            <p class="para-nav">Chiliken is a fried chicken fast food restaurant. It offer the special spicy taste chicken product. There are multiple level of spicy that consumers can try. The Devil's Pepper grade will be available for a limited time each year for consumer challenges. It also offers a non-spicy menu including French fries, salads, desserts and a variety of soft drinks.</p>
+            <p class="para-nav">Chiliken is a fried chicken fast food restaurant. It offer the special spicy taste chicken projects. There are multiple level of spicy that consumers can try. The Devil's Pepper grade will be available for a limited time each year for consumer challenges. It also offers a non-spicy menu including French fries, salads, desserts and a variety of soft drinks.</p>
         </section>
 
 
@@ -187,37 +184,65 @@
         <h2>Combined Elements</h2>
 
         <section class="element">
-            <h3>Main Navigation</h3>
-            <h4>Sample code:</h4>
-            <pre>
-                <code>&lt;nav&gt;
-        &lt;a href="#"&gt;Menu&lt;/a&gt;
-        &lt;a href="#"&gt;Order&lt;/a&gt;
-        &lt;a href="#"&gt;Deals&lt;/a&gt;
-        &lt;a href="#"&gt;Find a Chiliken&lt;/a&gt;
-        &lt;a href="#"&gt;More&lt;/a&gt;
-    &lt;/nav&gt;</code>
-            </pre>
-            <nav>
-                <img src="img/logo_small.png" class="nav_logo" alt="" width="60">
-                <h3 class="heading3-nav">Chiliken</h3>
-                <a href="#" class="nav_but">Menu</a> |
-                <a href="#" class="nav_but">Order</a> |
-                <a href="#" class="nav_but">Deals</a> |
-                <a href="#" class="nav_but">Find a Chiliken</a> |
-                <a href="#" class="nav_but">About</a>
-            </nav>
+          <h3>Navigation Bar</h3>
+          <h4>CSS selector:</h4>
+          <p>.nav-bar</p>
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;nav class="nav-bar"&gt;
+          &lt;a href="#"&gt;Home&lt;/a&gt;
+          &lt;a href="#"&gt;Projects&lt;/a&gt;
+          &lt;a href="#"&gt;About&lt;/a&gt;
+        &lt;/nav&gt;</code>
+          </pre>
+          <h4>Rendered element:</h4>
+          <nav class="nav-bar">
+            <a href="#">Qiaohui Xu</a>
+            <a href="#">Home</a>
+            <a href="#">Work</a>
+            <a href="#">About</a>
+          </nav>
+        </section>
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <h4>CSS selector:</h4>
+          <p>.image-link</p>
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;a href="#" class="image-link" style="background-image: url('path/to/image.jpg')"&gt;&lt;/a&gt;</code>
+          </pre>
+          <h4>Rendered element:</h4>
+          <a href="#" class="image-link" style="background-image: url('path/to/image.jpg')"></a>
+        </section>
+
+        <section class="element">
+          <h3>Header</h3>
+          <h4>CSS selector:</h4>
+          <p>.header</p>
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;header class="header"&gt;
+          &lt;h1&gt;My Portfolio&lt;/h1&gt;
+          &lt;p&gt;3D Digital Scene Designer&lt;/p&gt;
+        &lt;/header&gt;</code>
+          </pre>
+          <h4>Rendered element:</h4>
+          <header class="header">
+            <h1>My Portfolio</h1>
+            <p>3D Digital Scene Designer</p>
+          </header>
         </section>
 
 
         <section class="element">
-            <h3>Product/Service Listing</h3>
-            <section id="product_listing">
+            <h3>Projects Listing</h3>
+            <section id="projects_listing">
             <h4>Sample code:</h4>
             <pre>
-                <code>&lt;div class="productList_container"&gt;
-        &lt;a class="product_listing" href="checkout.html"&gt;
-            &lt;div class="productList"&gt;
+                <code>&lt;div class="projectsList_container"&gt;
+        &lt;a class="projects_listing" href="checkout.html"&gt;
+            &lt;div class="projectsList"&gt;
                 &lt;img src="img/buttermilk-fried-chicken-11-1200.jpg" alt="#" width="100%"&gt;
                 &lt;h3 class="heading3"&gt;Hot Wings&lt;/h3&gt;
                 &lt;h4 class="heading4"&gt;$10.99&lt;/h4&gt;
@@ -226,25 +251,25 @@
         &lt;/a&gt;
     &lt;/div&gt;</code>
             </pre>
-                <div class="productList_container">
-                    <a class="product_listing" href="checkout.html">
-                        <div class="productList">
+                <div class="projectsList_container">
+                    <a class="projects_listing" href="checkout.html">
+                        <div class="projectsList">
                             <img src="img/buttermilk-fried-chicken-11-1200.jpg" alt="#">
                             <h3 class="heading3">Hot Wings</h3>
                             <h4 class="heading4">$10.99</h4>
                             <p>1000 Cals</p>
                         </div>
                     </a>
-                    <a class="product_listing" href="checkout.html">
-                        <div class="productList">
+                    <a class="projects_listing" href="checkout.html">
+                        <div class="projectsList">
                             <img src="img/Crispy-Fried-Chicken_EXPS_TOHJJ22_6445_DR_02_03_11b.jpg" alt="#">
                             <h3 class="heading3">Crispy Wings</h3>
                             <h4 class="heading4">$10.99</h4>
                             <p>1000 Cals</p>
                         </div>
                     </a>
-                    <a class="product_listing" href="checkout.html">
-                        <div class="productList">
+                    <a class="projects_listing" href="checkout.html">
+                        <div class="projectsList">
                             <img src="img/Korean-Fried-Chicken-square-FS-New-7377.jpg" alt="#">
                             <h3 class="heading3">Chicken Combo</h3>
                             <h4 class="heading4">$10.99</h4>
@@ -255,203 +280,16 @@
             </section>
         </section>
 
-
-        <section class="element">
-            <h3>Payment Form</h3>
-            <h4>Sample code:</h4>
-            <pre>
-                <code>&lt;form action="#"&gt;
-        &lt;input type="text" class="firstName" placeholder="First Name"&gt;
-        &lt;input type="text" class="lastName" placeholder="Last Name"&gt;&lt;br&gt;
-        &lt;input type="email" class="newEmail" placeholder="Email Address"&gt;&lt;br&gt;
-        &lt;input type="password" class="newPassword" placeholder="Password"&gt;&lt;br&gt;
-        &lt;input type="number" class="cardNum" placeholder="Card Number"&gt;&lt;br&gt;
-        &lt;input type="number" class="expDate" placeholder="Expiring MM/YY"&gt;
-        &lt;input type="number" class="cvvCode" placeholder="CVV Code"&gt;&lt;br&gt;
-        &lt;button type="submit"&gt;Create an Account&lt;/button&gt;
-    &lt;/form&gt;
-    </code>
-            </pre>
-            <form action="#">
-                <input type="text" class="firstName" placeholder="First Name">
-                <input type="text" class="lastName" placeholder="Last Name"><br>
-                <input type="email" class="newEmail" placeholder="Email Address"><br>
-                <input type="password" class="newPassword" placeholder="Password"><br>
-                <input type="number" class="cardNum" placeholder="Card Number"><br>
-                <input type="number" class="expDate" placeholder="Expiring MM/YY">
-                <input type="number" class="cvvCode" placeholder="CVV Code"><br>
-                <button type="submit">Create an Account</button>
-            </form>
-        </section>
-
-
-        <section class="element">
-            <section id="checkout">
-                <h3>Checkout Cart</h3>
-                <h4>Sample code:</h4>
-                <pre>
-                    <code>&lt;div class="checkout-nav"&gt;
-        &lt;div class="checkout-cart"&gt;
-            &lt;h3 class="heading3"&gt;Checkout Cart&lt;/h3&gt;
-            &lt;section&gt;
-                &lt;fieldset class="cartCard"&gt;
-                    &lt;legend&gt;Killer Wings&lt;/legend&gt;
-                    &lt;section&gt;
-                        &lt;h4 class="heading4"&gt;$10.99&lt;/h4&gt;
-                        &lt;p class="p"&gt;Less sause&lt;/p&gt;
-                        &lt;section class=""&gt;
-                            &lt;button type="button"&gt;-&lt;/button&gt;
-                            &lt;span&gt;1&lt;/span&gt;
-                            &lt;button type="button"&gt;+&lt;/button&gt;
-                            &lt;button type="button"&gt;Remove&lt;/button&gt;
-                        &lt;/section&gt;
-                    &lt;/section&gt;
-                &lt;/fieldset&gt;
-
-                &lt;fieldset class="cartCard"&gt;
-                    &lt;legend&gt;Chicken Bowl&lt;/legend&gt;
-                    &lt;section&gt;
-                        &lt;h4 class="heading4"&gt;$20.99&lt;/h4&gt;
-                        &lt;p class="p"&gt;Honey sause&lt;/p&gt;
-                        &lt;p class="p"&gt;Fries&lt;/p&gt;
-                        &lt;p class="p"&gt;Diet Coke&lt;/p&gt;
-                        &lt;section class=""&gt;
-                            &lt;button type="button"&gt;-&lt;/button&gt;
-                            &lt;span&gt;2&lt;/span&gt;
-                            &lt;button type="button"&gt;+&lt;/button&gt;
-                            &lt;button type="button"&gt;Remove&lt;/button&gt;
-                    &lt;/section&gt;
-                    &lt;/section&gt;
-                &lt;/fieldset&gt;
-                &lt;button type="button"&gt;+ Add Items&lt;/button&gt;&lt;br&gt;
-                &lt;section class="amount"&gt;
-                    &lt;p class="p"&gt;Subtotal $31.98&lt;/p&gt;
-                    &lt;p class="p"&gt;Tax $3.82&lt;/p&gt;
-                    &lt;p class="p"&gt;Total $35.82&lt;/p&gt;
-                &lt;/section&gt;
-            &lt;/section&gt;
-        &lt;/div&gt;
-        &lt;div class="checkout-payment-container"&gt;
-            &lt;div class="checkout-signup"&gt;
-                &lt;h3 class="heading3"&gt;Almost There&lt;/h3&gt;
-                &lt;h4 class="heading4"&gt;Sign up to start the Chili journey&lt;/h4&gt;
-                &lt;section&gt;
-                    &lt;input type="text" class="firstName" placeholder="First Name"&gt;
-                    &lt;input type="text" class="lastName" placeholder="Last Name"&gt;&lt;br&gt;
-                    &lt;input type="email" class="newEmail" placeholder="Email Address"&gt;&lt;br&gt;
-                    &lt;input type="password" class="newPassword" placeholder="Password"&gt;&lt;br&gt;
-                    &lt;input type="number" class="cardNum" placeholder="Card Number"&gt;&lt;br&gt;
-                    &lt;input type="number" class="expDate" placeholder="Expiring MM/YY"&gt;
-                    &lt;input type="number" class="cvvCode" placeholder="CVV Code"&gt;&lt;br&gt;
-                    &lt;button type="submit"&gt;Create an Account&lt;/button&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-            &lt;div class="checkout-login"&gt;
-                &lt;h4 class="heading4"&gt;Already have a account?&lt;/h4&gt;
-                &lt;section&gt;
-                    &lt;input type="email" class="email" placeholder="Email Address"&gt;&lt;br&gt;
-                    &lt;input type="password" id="password" placeholder="Password"&gt;&lt;br&gt;
-                    &lt;button type="submit"&gt;Sign In&lt;/button&gt;
-                &lt;/section&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    </code>
-                </pre>
-                <div class="checkout-nav">
-                    <div class="checkout-cart">
-                        <h3 class="heading3">Checkout Cart</h3>
-                        <section>
-                            <fieldset class="cartCard">
-                                <legend>Killer Wings</legend>
-                                <section>
-                                    <h4 class="heading4">$10.99</h4>
-                                    <p class="p">Less sause</p>
-                                    <section class="">
-                                        <button type="button">-</button>
-                                        <span>1</span>
-                                        <button type="button">+</button>
-                                        <button type="button">Remove</button>
-                                    </section>
-                                </section>
-                            </fieldset>
-
-                            <fieldset class="cartCard">
-                                <legend>Chicken Bowl</legend>
-                                <section>
-                                    <h4 class="heading4">$20.99</h4>
-                                    <p class="p">Honey sause</p>
-                                    <p class="p">Fries</p>
-                                    <p class="p">Diet Coke</p>
-                                    <section class="">
-                                        <button type="button">-</button>
-                                        <span>2</span>
-                                        <button type="button">+</button>
-                                        <button type="button">Remove</button>
-                                    </section>
-                                </section>
-                            </fieldset>
-
-                            <button type="button">+ Add Items</button><br>
-                            <section class="amount">
-                                <p class="p">Subtotal $31.98</p>
-                                <p class="p">Tax $3.82</p>
-                                <p class="p">Total $35.82</p>
-                            </section>
-                        </section>
-                    </div>
-                    <div class="checkout-payment-container">
-                        <div class="checkout-signup">
-                            <h3 class="heading3">Almost There</h3>
-                            <h4 class="heading4">Sign up to start the Chili journey</h4>
-                            <section>
-                                <input type="text" class="firstName" placeholder="First Name">
-                                <input type="text" class="lastName" placeholder="Last Name"><br>
-                                <input type="email" class="newEmail" placeholder="Email Address"><br>
-                                <input type="password" class="newPassword" placeholder="Password"><br>
-                                <input type="number" class="cardNum" placeholder="Card Number"><br>
-                                <input type="number" class="expDate" placeholder="Expiring MM/YY">
-                                <input type="number" class="cvvCode" placeholder="CVV Code"><br>
-                                <button type="submit">Create an Account</button>
-                            </section>
-                        </div>
-                        <div class="checkout-login">
-                            <h4 class="heading4">Already have a account?</h4>
-                            <section>
-                                <input type="email" class="email" placeholder="Email Address"><br>
-                                <input type="password" id="password" placeholder="Password"><br>
-                                <button type="submit">Sign In</button>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
-    <section id="company">
-        <h2>About Us</h2>
-        <h3 class="heading3">Chiliken</h3>
-        <p>Chiliken is a fried chicken fast food restaurant. It offer the special spicy taste chicken product. There are multiple level of spicy that consumers can try. The Devil's Pepper grade will be available for a limited time each year for consumer challenges. It also offers a non-spicy menu including French fries, salads, desserts and a variety of soft drinks.</p>
-
-        <h3>Potential Customers</h3>
-        <ol>
-            <li>The person between 8 – 40 years old who love fried chicken.</li>
-            <li>The person who love spicy food or chili pepper.</li>
-            <li>The person don’t have time to prepare food.</li>
-            <li>The person who is not so concerned about the health(Calories) of food.</li>
-        </ol>
-
-        <h3>Consumer motivation</h3>
-        <ol>
-            <li>A unique fresh spicy flavor that you can't find in the market. </li>
-            <li>Attractive promotional deals and discounts.</li>
-        </ol>
+    <section id="about">
+        <h2>About</h2>
+        <h3 class="heading3">Qiaohui Xu</h3>
+        <p>As a person with an open-minded view of beauty, I am passionate about beautifully designed clothing for both men and women. This obsession with aesthetics has driven me to maintain high standards throughout my studies as a 3D digital designer. With diverse experience in digital model design, including scene, industrial design, and character modeling, I strive to create visually compelling and emotionally engaging designs that connect with people. This drive is reflected in my visual and textual ethos, which showcases my ability to think through a problem and iterate on a project over time to create innovative and impactful designs.</p>
     </section>
 
-    <section id="brandComponents">
-        <h2>Branding Components</h2>
+    <section id="components">
+        <h2>Components</h2>
         <h3>Fonts Selection</h3>
         <p>Serif fonts: <span style="font-size: 20pt; font-family:'Playfair Display', 'Playfair Display Black', 'Playfair Display ExtraBold', 'Playfair Display Medium', 'Playfair Display SemiBold', Cambria, 'serif'" ><strong>Playfair</strong></span></p>
         <p>Safe option for Serif fonts: <span style="font-size: 20pt; font-family: Cambria, 'serif'" >Cambria</span></p>
@@ -462,53 +300,65 @@
         <h3>Colour palettes</h3>
         <div class = "colourCard_container">
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#FB401F ;color: white">#FB401F</button>
+                <button style="padding: 20pt; background-color:#F2BAC9 ;color: white">#F2BAC9 </button>
                 <p>Hover Button Stroke & Link Background</p>
             </div>
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#F4651F">#F4651F</button>
+                <button style="padding: 20pt; background-color:#B3B8B7 ">#B3B8B7 </button>
                 <p>Hover Picture & Button Background</p>
             </div>
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#F6B229">#F6B229</button>
+                <button style="padding: 20pt; background-color:#E97A7A  ">#E97A7A  </button>
                 <p>Button Default Background</p>
             </div>
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#F2F4B2">#F2F4B2</button>
+                <button style="padding: 20pt; background-color:#D8A7B1  ">#D8A7B1  </button>
                 <p>Hover & Focus Input Background</p>
             </div>
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#5E2A00 ;color: white">#5E2A00</button>
+                <button style="padding: 20pt; background-color:#000000   ;color: white">#000000  </button>
                 <p>Default Stroke & Font Storke in Button</p>
             </div>
             <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#000000 ;color: white">#000000</button>
+                <button style="padding: 20pt; background-color:#2F2F2F  ;color: white">#2F2F2F </button>
+                <p>Default Font Stroke</p>
+            </div>
+        </div>
+        <div class = "colourCard_container">
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#F2BAC9 ;color: white">#F2BAC9 </button>
+                <p>Hover Button Font</p>
+            </div>
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#B3B8B7 ">#B3B8B7 </button>
+                <p>Hover Picture & Button Background</p>
+            </div>
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#E97A7A  ">#E97A7A  </button>
+                <p>Button Default Background</p>
+            </div>
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#D8A7B1  ">#D8A7B1  </button>
+                <p>Hover & Focus Input Background</p>
+            </div>
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#000000   ;color: white">#000000  </button>
+                <p>Default Stroke & Font Storke in Button</p>
+            </div>
+            <div class = "colorCard">
+                <button style="padding: 20pt; background-color:#2F2F2F  ;color: white">#2F2F2F </button>
                 <p>Default Font Stroke</p>
             </div>
         </div>
 
         <h3>Art Direction</h3>
         <img src="img/logo.jpg" alt="" width="800">
-        <img src="img/logo2.jpg" alt="" width="800">
-        <img src="img/lava.jpg" alt="" width="800">
-        <img src="img/Korean-Fried-Chicken-square-FS-New-7377.jpg" alt="" width="800">
     </section>
 
     <section id="citations">
         <h2>Citations</h2>
         <ul>
-            <li>Andrew Kliatskyi. <strong>Volcanic eruption</strong>. Retrieved from <a class="intext-nav" href="https://dribbble.com/shots/3221560-Volcanic-eruption">https://dribbble.com/shots/3221560-Volcanic-eruption</a></li>
-            <li>Artist iimages. <strong>Sticker design with volcano eruption with lava vector image</strong>. Retrieved from <a class="intext-nav" href="https://www.vectorstock.com/royalty-free-vector/sticker-design-with-volcano-eruption-with-lava-vector-39601061">https://www.vectorstock.com/royalty-free-vector/sticker-design-with-volcano-eruption-with-lava-vector-39601061</a></li>
-            <li>Claus Eggers Sørensen. Designer. 2019. <strong>Playfair Display [Font]</strong>. Retrieved from <a class="intext-nav" href="https://fonts.google.com/specimen/Playfair+Display">https://fonts.google.com/specimen/Playfair+Display</a></li>
-            <li>Food Network Magazine. <strong>The Neelys' Spicy Fried Wings</strong>. Retrieved from <a class="intext-nav" href="https://www.foodnetwork.com/recipes/patrick-and-gina-neely/the-neelys-spicy-fried-wings-recipe-1972963">https://www.foodnetwork.com/recipes/patrick-and-gina-neely/the-neelys-spicy-fried-wings-recipe-1972963</a></li>
-            <li>Fotolia. <strong>A Fried Chicken.</strong>Retrieved from <a class="intext-nav" href="https://images1.epochhk.com/pictures/67113/Fotolia_103149367_Subscription_L_1@1200x1200.jpg">https://images1.epochhk.com/pictures/67113/Fotolia_103149367_Subscription_L_1@1200x1200.jpg</a></li>
-            <li>Steve Matteson. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a class="intext-nav" href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-            <li>tmn art. <strong>Abstract lava liquid marble backdround vector design.</strong>. Retrieved from <a class="intext-nav" href="https://www.shutterstock.com/image-vector/abstract-lava-liquid-marble-backdround-vector-1974853565">https://www.shutterstock.com/image-vector/abstract-lava-liquid-marble-backdround-vector-1974853565</a></li>
-            <li>Jessica Gavin. <strong>Buttermilk Fried Chicken.</strong>. Retrieved from <a class="intext-nav" href="https://www.jessicagavin.com/buttermilk-fried-chicken/">https://www.jessicagavin.com/buttermilk-fried-chicken/</a></li>
-            <li>Nicky Corbishley. <strong>Korean Fried Chicken.</strong>. Retrieved from <a class="intext-nav" href="https://www.kitchensanctuary.com/korean-fried-chicken/">https://www.kitchensanctuary.com/korean-fried-chicken/</a></li>
-            <li>Taste of Home. <strong>Abstract lava liquid marble backdround vector design.</strong>. Retrieved from <a class="intext-nav" href="https://www.tasteofhome.com/recipes/crispy-fried-chicken/">https://www.tasteofhome.com/recipes/crispy-fried-chicken/</a></li>
             <li>Other listed in file.</li>
-
         </ul>
     </section>
 </body>
