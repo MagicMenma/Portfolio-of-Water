@@ -358,6 +358,8 @@ button:hover {
 	background-color: $btnBg;
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+    
+    
 }
 
 @media (max-width: 1200px) {
@@ -373,6 +375,11 @@ button:hover {
 	transition-property: background-color, color;
 	-webkit-transition-duration: 0.25s;
 	        transition-duration: 0.25s;
+    
+    -webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-box-shadow: 12px 12px $btnBg;
+	        box-shadow: 12px 12px $btnBg;
 }
 
 .projects_listing:hover {
@@ -381,6 +388,7 @@ button:hover {
 	transition-property: color;
 	-webkit-transition-duration: 0.25s;
 	        transition-duration: 0.25s;
+    transition-property: color;
 }
 
 .projectsList img {

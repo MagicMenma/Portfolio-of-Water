@@ -377,6 +377,10 @@ button:hover {
 	transition-property: background-color, color;
 	-webkit-transition-duration: 0.25s;
 	transition-duration: 0.25s;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-box-shadow: 12px 12px #E97A7A;
+	box-shadow: 12px 12px #E97A7A;
 }
 
 .projects_listing:hover {
@@ -385,6 +389,7 @@ button:hover {
 	transition-property: color;
 	-webkit-transition-duration: 0.25s;
 	transition-duration: 0.25s;
+	transition-property: color;
 }
 
 .projectsList img {
