@@ -6,10 +6,14 @@ body {
 	background-color: #F1E7D9;
 }
 
-.header_section {
+.container-fluid {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -24,7 +28,7 @@ body {
 	margin: 0 auto;
 }
 
-.navbar-brand {
+.navbar-brand-item {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -33,43 +37,29 @@ body {
 	        align-items: center;
 }
 
-.navbar-brand img {
-	width: 40px;
-	margin-right: 5px;
-}
-
-.navbar-brand span {
+.navbar-brand-item span {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 	text-transform: uppercase;
 	font-size: 28px;
 	font-weight: 500;
-	color: #fefeff;
+	color: #E97A7A;
 	margin-top: 5px;
 }
 
-.custom_nav-container {
-	z-index: 99999;
-	padding: 15px 0;
+.navbar-brand a:hover {
+	background: none;
+	text-decoration-line: underline;
 }
 
-.custom_nav-container .navbar-toggler {
-	outline: none;
+.navbar-links {
+	margin-left: auto;
 }
 
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-	background-image: url(../images/menu.png);
-	background-size: 55px;
+.navbar-links a {
+	margin-right: 1rem;
 }
 
-.quote_btn-container a {
-	display: inline-block;
-	padding: 5px 15px;
-	background-color: #fc5d35;
-	color: #f7f7f7;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
+/* For the Style-guide */
 .headingLogo-nav {
 	display: inline-block;
 	vertical-align: middle;
@@ -120,6 +110,7 @@ nav {
 	flex: 1;
 }
 
+/* END - For the Style-guide */
 .nav_but {
 	border: none;
 	color: white;
@@ -248,6 +239,34 @@ button:hover {
 	transition-property: background-color, color;
 	-webkit-transition-duration: 0.25s;
 	transition-duration: 0.25s;
+}
+
+/* 
+  GALLERY -------------------
+*/
+.product-listings-gallery {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.product-listings-gallery-card {
+	padding-top: 10vw;
+	padding-left: 10%;
+	padding-bottom: 2rem;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url(https://images.unsplash.com/photo-1597823968481-20de5e1269c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1597823968481-20de5e1269c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 45vw;
 }
 
 /* 
