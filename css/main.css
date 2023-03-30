@@ -4,6 +4,13 @@
 */
 body {
 	background-color: #F1E7D9;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.header_section {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .container-fluid {
@@ -244,29 +251,8 @@ button:hover {
 /* 
   GALLERY -------------------
 */
-.product-listings-gallery {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
-
-.product-listings-gallery-card {
-	padding-top: 10vw;
-	padding-left: 10%;
-	padding-bottom: 2rem;
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url(https://images.unsplash.com/photo-1597823968481-20de5e1269c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1597823968481-20de5e1269c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 45vw;
+.intro-gallery-img {
+	width: 100%;
 }
 
 /* 
@@ -337,7 +323,20 @@ button:hover {
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
 
+.porjects-gallery {
+	margin-top: 10rem;
+}
+
+.projects_intro {
+	text-align: center;
+}
+
+.projects_intro h1 h4 {
+	display: inline-block;
+}
+
 .projectsList_container {
+	margin-top: 5rem;
 	margin-left: 15%;
 	margin-right: 15%;
 	display: -webkit-box;
@@ -392,6 +391,48 @@ button:hover {
 	width: 100%;
 }
 
+.about-gallery {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+}
+
+.about_img {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.bio-img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+.about_intro {
+	-webkit-box-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.about_intro p {
+	width: 90%;
+}
+
 .colourCard_container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -417,7 +458,7 @@ footer {
 	background-color: #E97A7A;
 	color: white;
 	display: block;
-	margin-top: 5rem;
+	margin-top: 10rem;
 }
 
 .footer-nav {
