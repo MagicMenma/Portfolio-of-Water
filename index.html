@@ -12,27 +12,31 @@
     background-attachment: fixed;
   }
 </style>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
+</head>
+    
+<body>
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar-container">
           <a class="navbar-brand" href="index.html">
             <span>
-              Intot
+              Qiaohui Xu
             </span>
           </a>
 
           <div class="navbar-collapse" id="">
             <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
+              <div class="navbar-nav  ">
+                <div class="nav-item">
                   <a class="nav-link" href="fruit.html">
                     <span>Login</span></a>
-                </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                   <a class="nav-link" href="service.html">
                     <span>Sign Up</span>
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
               <form class="form-inline my-2 mb-3 mb-lg-0 mr-5">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
@@ -64,223 +68,8 @@
           </div>
         </nav>
       </div>
-</head>
+    </header>
     
-<body>
-    <img class="headingLogo-nav" src="img/1_5.png" alt="" width="100">
-    <h1 class="heading-nav">Qiaohui Xu - The Art of Webcraft</h1>
-    <p class="p">Prepare to be DAZZLED! This style guide is your backstage pass to the design elements and styles that make my portfolio website stand out from the crowd. From bold typography to eye-catching color schemes, I'm excited to share my secrets with you.</p>
-
-    <nav class="styleGuide-header-nav"> 
-        <a class="nav_but" href="#">Home</a>  |
-        <a class="nav_but" href="#interactive_elements">Interactive Elements</a>  |
-        <a class="nav_but" href="#text_elements">Text Elements</a>  |
-        <a class="nav_but" href="#combined_elements">Combined Elements</a>  |
-        <a class="nav_but" href="projectsList.html">Projects Listing Page</a>  |
-        <a class="nav_but" href="#citations">Citations</a>
-    </nav>
-
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-        <h2>Interactive Elements</h2>
-        <section class="element">
-            <h3>In-text Link</h3>
-            <h4>CSS selector:</h4>
-            <p>.intext-nav</p>
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="intext-nav"&gt;Default In-text&lt;/a&gt;</code>
-            <h4>Rendered element:</h4>
-            <a class="intext-nav">Default In-text</a>
-        </section>
-    </section>
-
-
-    <!-- Default Button styling section -->
-    <section class="element">
-        <h3>Image as a Link</h3>
-        <h4>CSS selector:</h4>
-        <p>.imgLink-nav</p>
-        <h4>Sample code:</h4>
-        <code>&lt;a class="imgLink-nav" href="#link"&gt;&lt;img src="#image" alt="#"&gt;&lt;/a&gt;</code>
-        <h4>Rendered element:</h4>
-        <a href="#"> 
-            <img class="imgLink-nav" src="img/sample.jpg" alt="#" width="400"> 
-        </a> 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION --> 
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-        <h2>Text Elements</h2>
-        <section class="element">
-            <h3>Headings</h3>
-            <h4>CSS selector:</h4>
-            <p>.heading-nav</p>
-            <h4>Sample code:</h4>
-            <pre>
-                <code>&lt;h1 class="heading1"&gt;Heading1&lt;/h1&gt;
-    &lt;h2 class="heading2"&gt;Heading2&lt;/h2&gt;
-    &lt;h3 class="heading3"&gt;Heading3&lt;/h3&gt;
-    &lt;h4 class="heading4"&gt;Heading4&lt;/h4&gt;</code>
-            </pre>
-            <h4>Rendered element:</h4>
-            <section class=".heading-nav">
-                <h1 class="heading1">Water</h1>
-                <h2 class="heading2">Water</h2>
-                <h3 class="heading3">Water</h3>
-                <h4 class="heading4">Water</h4>
-            </section>
-        </section>
-        <section class="element">
-            <h3>Paragraphs</h3>
-            <h4>CSS selector:</h4>
-            <p>.para-nav</p>
-            <h4>Sample code:</h4>
-            <code>&lt;p class="para-nav"&gt;Default paragraphs&lt;/p&gt;</code>
-            <h4>Rendered element:</h4>
-            <p class="para-nav">As a person with an open-minded view of beauty, I am passionate about beautifully designed clothing for both men and women. This obsession with aesthetics has driven me to maintain high standards throughout my studies as a 3D digital designer. With diverse experience in digital model design, including scene, industrial design, and character modeling, I strive to create visually compelling and emotionally engaging designs that connect with people. This drive is reflected in my visual and textual ethos, which showcases my ability to think through a problem and iterate on a project over time to create innovative and impactful designs.</p>
-        </section>
-
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION --> 
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-        <h2>Combined Elements</h2>
-
-        <section class="element">
-          <h3>Navigation Bar</h3>
-          <h4>CSS selector:</h4>
-          <p>.nav-bar</p>
-          <h4>Sample code:</h4>
-          <pre>
-            <code>&lt;nav class="nav-bar"&gt;
-          &lt;a href="#"&gt;Home&lt;/a&gt;
-          &lt;a href="#"&gt;Projects&lt;/a&gt;
-          &lt;a href="#"&gt;About&lt;/a&gt;
-        &lt;/nav&gt;</code>
-          </pre>
-          <h4>Rendered element:</h4>
-          <nav class="nav-bar">
-            <a href="#">Qiaohui Xu</a>
-            <a href="#">Home</a>
-            <a href="#">Work</a>
-            <a href="#">About</a>
-          </nav>
-        </section>
-
-        <section class="element">
-          <h3>Image as a Link</h3>
-          <h4>CSS selector:</h4>
-          <p>.image-link</p>
-          <h4>Sample code:</h4>
-          <pre>
-            <code>&lt;a href="#" class="image-link" style="background-image: url('path/to/image.jpg')"&gt;&lt;/a&gt;</code>
-          </pre>
-          <h4>Rendered element:</h4>
-          <a href="#" class="image-link" style="background-image: url('path/to/image.jpg')"></a>
-        </section>
-
-        <section class="element">
-            <h3>Projects Listing</h3>
-            <section id="projects_listing">
-            <h4>Sample code:</h4>
-            <pre>
-                <code>&lt;div class="projectsList_container"&gt;
-        &lt;a class="projects_listing" href="checkout.html"&gt;
-            &lt;div class="projectsList"&gt;
-                &lt;img src="img/buttermilk-fried-chicken-11-1200.jpg" alt="#" width="100%"&gt;
-                &lt;h3 class="heading3"&gt;Hot Wings&lt;/h3&gt;
-                &lt;h4 class="heading4"&gt;$10.99&lt;/h4&gt;
-                &lt;p&gt;1000 Cals&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;</code>
-            </pre>
-                <div class="projectsList_container">
-                    <a class="projects_listing" href="checkout.html">
-                        <div class="projectsList">
-                            <img src="img/project1.jpg" alt="#">
-                            <h3 class="heading3">AUDU</h3>
-                            <h4 class="heading4">Industrial Design</h4>
-                            <p>Blender</p>
-                        </div>
-                    </a>
-                    <a class="projects_listing" href="checkout.html">
-                        <div class="projectsList">
-                            <img src="img/project2.png" alt="#">
-                            <h3 class="heading3">Holland Park</h3>
-                            <h4 class="heading4">Scene Modeling and Design</h4>
-                            <p>Blender + TwimMotion</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </section>
-
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-    <section id="about">
-        <h2>About</h2>
-        <h3 class="heading3">Qiaohui Xu</h3>
-        <p>As a person with an open-minded view of beauty, I am passionate about beautifully designed clothing for both men and women. This obsession with aesthetics has driven me to maintain high standards throughout my studies as a 3D digital designer. With diverse experience in digital model design, including scene, industrial design, and character modeling, I strive to create visually compelling and emotionally engaging designs that connect with people. This drive is reflected in my visual and textual ethos, which showcases my ability to think through a problem and iterate on a project over time to create innovative and impactful designs.</p>
-    </section>
-
-    <section id="components">
-        <h2>Components</h2>
-        <h3>Fonts Selection</h3>
-        <p>Serif fonts: <span style="font-size: 20pt; font-family:'Playfair Display', 'Playfair Display Black', 'Playfair Display ExtraBold', 'Playfair Display Medium', 'Playfair Display SemiBold', Cambria, 'serif'" ><strong>Playfair</strong></span></p>
-        <p>Safe option for Serif fonts: <span style="font-size: 20pt; font-family: Cambria, 'serif'" >Cambria</span></p>
-        <p>Sans-serif fonts: <span style="font-family: Century Gothic, Arial, Arial Black, Arial Narrow, sans-serif">Century Gothic</span></p>
-        <p>Sans-serif fonts: <span style="font-family: Arial Black, sans-serif">Arial Black</span></p>
-
-
-        <h3>Colour palettes</h3>
-        <div class = "colourCard_container">
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#F2BAC9 ">#F2BAC9 </button>
-                <p>Hover Button Stroke & Link Background</p>
-            </div>
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#B3B8B7 ">#B3B8B7 </button>
-                <p>Hover Picture & Button Background</p>
-            </div>
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#E97A7A  ">#E97A7A  </button>
-                <p>Button Default Background</p>
-            </div>
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#D8A7B1  ">#D8A7B1  </button>
-                <p>Hover & Focus Input Background</p>
-            </div>
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#CD2020 ;color: white">#CD2020 </button>
-                <p>Hover Button Font & Button Border Color</p>
-            </div>
-            <div class = "colorCard">
-                <button style="padding: 20pt; background-color:#2F2F2F  ">#2F2F2F </button>
-                <p>Default Font Stroke</p>
-            </div>
-        </div>
-
-        <h3>Art Direction</h3>
-        <img src="img/1_5.png" alt="My logo V3.0">
-        <img src="img/1_1.png" alt="My logo V2.0" width="300">
-        <img src="img/IMG_0292.png" alt="My logo V1.0" width="300">
-        
-    </section>
-
-    <section id="citations">
-        <h2>Citations</h2>
-        <ul>
-            <li>Rose.png. For background.<a>https://svgsilh.com/zh/image/1751345.html</a></li>
-            <li>Other listed in file.</li>
-        </ul>
-    </section>
-</section>
 </body>
 <footer>
     <div class="footer-title">
