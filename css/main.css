@@ -66,18 +66,37 @@ body {
 	margin-right: 1rem;
 }
 
-.dropdown{
-    width: 100%;
-    position: absolute;
-    z-index: 1000;
-    list-style: none;
-    display: none;
+.overlay-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
-.dropdown li{
-    padding: 5px;
+
+.dropdown-item {
+	width: 10%;
+	position: absolute;
+	margin-top: 0;
+	z-index: 800;
+	list-style: none;
+	background: #F1E7D9;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+	opacity: 0;
 }
-.dropdown hover{
-    display: block;
+
+.dropdown-item li {
+	padding: 10px;
+}
+
+.nav-dropdown:hover .dropdown-item {
+	opacity: 1;
 }
 
 /* For the Style-guide */

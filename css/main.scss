@@ -52,18 +52,41 @@ body {
   margin-top: 5px;
 }
 
-.navbar-brand a:hover{
-  background: none;
-  text-decoration-line:underline;
+.navbar-brand a:hover {
+	background: none;
+	text-decoration-line: underline;
 }
 
-.navbar-links{
-  margin-left: auto;
+.navbar-links {
+	margin-left: auto;
+}
+.navbar-links a {
+	margin-right: 1rem;
+}
+.overlay-content{
+    display: flex;
+    align-items: center;
+}
+.dropdown-item{
+    width: 10%;
+    position: absolute;
+    margin-top: 0;
+    z-index: 800;
+    list-style: none;
+    background: $background;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+    
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.dropdown-item li{
+    padding: 10px;
+}
+.nav-dropdown:hover .dropdown-item{
+    opacity: 1;
 }
 
-.navbar-links a{
-    margin-right: 1rem;
-}
 
 /* For the Style-guide */
 
@@ -369,10 +392,7 @@ button:hover {
 	background-color: $btnBg;
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
-    
-    
 }
-
 @media (max-width: 1200px) {
 	.projectsList_container {
 		-ms-flex-wrap: wrap;
