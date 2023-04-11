@@ -68,23 +68,25 @@ body {
     align-items: center;
 }
 .dropdown-item{
-    width: 10%;
+    width: 170px;
+    padding-right: 10px;
     position: absolute;
-    margin-top: 0;
-    z-index: 800;
+    z-index: 999;
     list-style: none;
     background: $background;
     box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+    padding-left: 10px;
     
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    left: auto;
 }
 .dropdown-item li{
-    padding: 10px;
+    padding: 15px;
 }
 .nav-dropdown:hover .dropdown-item{
-    opacity: 1;
+    max-height: 120px;
 }
 
 
