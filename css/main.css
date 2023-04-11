@@ -66,6 +66,20 @@ body {
 	margin-right: 1rem;
 }
 
+.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    display: none;
+}
+.dropdown li{
+    padding: 5px;
+}
+.dropdown hover{
+    display: block;
+}
+
 /* For the Style-guide */
 .headingLogo-nav {
 	display: inline-block;
