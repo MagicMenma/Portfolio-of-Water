@@ -277,6 +277,18 @@ nav {
 	align-items: center;
 }
 
+@media screen and (max-width: 680px) {
+	.styleGuide-header-nav {
+		display: none;
+	}
+}
+@media screen and (min-width: 680px) {
+	.styleGuide-header-nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
 .styleGuide-header-nav .nav_but {
 	background-color: #E97A7A;
 	-webkit-box-flex: 1;

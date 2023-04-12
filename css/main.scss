@@ -204,6 +204,17 @@ nav {
 	        align-items: center;
 }
 
+@media screen and (max-width: 680px) {
+    .styleGuide-header-nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 680px) {
+    .styleGuide-header-nav {
+        display: flex;
+    }
+}
+
 .styleGuide-header-nav .nav_but {
 	background-color: $btnBg;
 	-webkit-box-flex: 1;
