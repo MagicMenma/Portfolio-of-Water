@@ -431,12 +431,9 @@ button:hover {
 /* 
   GALLERY -------------------
 */
-.intro-gallery {
+.intro-gallery-card {
 	position: relative;
 	z-index: -2;
-}
-
-.intro-gallery-card {
 	width: 100%;
 	height: 840px;
 	overflow: hidden;
@@ -460,6 +457,11 @@ button:hover {
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+
+.product-img-card {
+	position: relative;
+	z-index: 0;
 }
 
 .product-img {
