@@ -249,15 +249,6 @@ body {
 	margin-right: 1rem;
 }
 
-.heading-nav {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 3rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-
 .header-nav {
 	position: sticky;
 	top: 0px;
@@ -387,6 +378,14 @@ li, ol, label, input {
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
 
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 0.8rem;
+}
+
 legend {
 	font-size: 1.5rem;
 	font-style: normal;
@@ -489,51 +488,11 @@ button:hover {
 	box-shadow: 12px 12px #E97A7A;
 }
 
-/* 
-  TEXT ELEMENTS -------------------
-*/
-.heading1 {
-	font-size: 4rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-
-.heading2 {
-	font-size: 3rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-
-.heading3 {
-	font-size: 2rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-
-.heading3-nav {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 2rem;
-	font-style: normal;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-	margin-right: 2rem;
-}
-
-.heading4 {
-	font-size: 1rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-
-.p {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 0.5rem;
-	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+.imglink-container:hover {
+	padding: 0.5rem;
+	background: none;
+	color: none;
+	text-decoration-line: none;
 }
 
 .porjects-gallery {
