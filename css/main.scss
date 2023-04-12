@@ -279,8 +279,15 @@ button:hover {
 /* 
   GALLERY -------------------
 */
-.intro-gallery-img{
+.intro-gallery-card{
     width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+.intro-gallery-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 
@@ -439,6 +446,19 @@ button:hover {
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
+@media screen and (max-width: 800px) {
+    .about-gallery{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .about_img{
+        margin-top: 2rem;
+    }
+}
 .about_img{
     flex: 1;
 }
@@ -547,4 +567,8 @@ footer {
 	.footer-link-container {
 		display: block;
 	}
+    .footer-link-container a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 }
