@@ -239,7 +239,7 @@ body {
 }
 
 .nav-dropdown:hover .dropdown-item {
-	max-height: 120px;
+	max-height: 250px;
 }
 
 /* For the Style-guide */
@@ -508,7 +508,7 @@ button:hover {
 }
 
 .porjects-gallery {
-	margin-top: 7rem;
+	margin-top: 10rem;
 }
 
 .porjects-gallery .intro-gallery {
