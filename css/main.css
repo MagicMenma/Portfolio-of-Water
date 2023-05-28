@@ -368,6 +368,7 @@ h2 {
 h3 {
 	font-style: italic;
 	margin-top: 1rem;
+    font-size: 1.3rem;
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
 
@@ -562,6 +563,10 @@ button:hover {
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
 
+.projectsList p{
+    color:#FFBCBC;
+}
+
 @media (max-width: 1200px) {
 	.projectsList_container {
 		-ms-flex-wrap: wrap;
@@ -579,6 +584,10 @@ button:hover {
 	transition: all 0.2s ease-out;
 	-webkit-box-shadow: 12px 12px #E97A7A;
 	box-shadow: 12px 12px #E97A7A;
+}
+
+.projectsList:hover p{
+    color:#EB7373;
 }
 
 .projects_listing:hover {
