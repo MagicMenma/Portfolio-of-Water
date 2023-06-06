@@ -150,6 +150,8 @@ body {
 		        transform: translateX(-20px) rotate(225deg);
 	}
 }
+
+
 .header_section {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -410,12 +412,6 @@ nav a:hover, nav a:focus {
 	text-decoration: none;
 }
 
-code {
-	background-color: #EEE;
-	padding: 0.5rem;
-	display: block;
-}
-
 button {
 	margin-top: 0.8rem;
 	margin-bottom: 0.5rem;
@@ -447,7 +443,7 @@ button:hover {
 	position: relative;
 	z-index: -3;
 	width: 100%;
-	height: 100%;
+	height: 85vh;
 	overflow: hidden;
 }
 
@@ -455,8 +451,14 @@ button:hover {
     position: relative;
     z-index: 0;
 	width: 100%;
-	height: 100%;
+	height: 85vh;
 	overflow: hidden;
+    object-fit: cover;
+}
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .intro-gallery-card img {
@@ -533,8 +535,13 @@ button:hover {
 }
 
 .projects_intro {
-	margin-top: 3rem;
+	margin-top: 10vh;
+    margin-bottom: 5vh;
 	text-align: center;
+}
+.intro_inf{
+    margin-top: 20vh;
+    margin-bottom: 15vh;
 }
 
 .projects_intro h1 h4 {
@@ -547,7 +554,7 @@ button:hover {
 }
 
 .projectsList_container {
-	margin-top: 5rem;
+	margin-top: 5vh;
 	margin-left: 15%;
 	margin-right: 15%;
 	display: -webkit-box;
@@ -573,6 +580,7 @@ button:hover {
 	background-color: #E97A7A;
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+    text-align: left;
 }
 
 .projectsList p{
@@ -803,11 +811,13 @@ footer {
         object-fit: cover;
     }
     
+/*
     .video {
         width: 100%;
         height: 80vh;
         object-fit: cover;
     }
+*/
     
 /*
     .projectsList_container {
