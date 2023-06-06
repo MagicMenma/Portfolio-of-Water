@@ -57,7 +57,7 @@
     <div class="intro-gallery-slider">
         <div class="intro-gallery-sub">
             <!--radio buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1" checked="true">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             <input type="radio" name="radio-btn" id="radio4">
@@ -95,6 +95,17 @@
                 <label for="radio4" class="manual-btn"></label>
                 <label for="radio5" class="manual-btn"></label>
             </div>
+            
+            <script type="text/javascript">
+                var counter = 2;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 5){
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
         </div>
     </div>
     

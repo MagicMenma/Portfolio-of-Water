@@ -328,7 +328,9 @@ button:hover {
     object-fit: cover;
 }
 
-/*///////////////Pages with Image Slider////////////////////////////*/
+/*
+    Pages with Image Slider ----------
+*/
 .intro-gallery-slider{
     width: 100%;
     height: 85vh;
@@ -341,6 +343,7 @@ button:hover {
 }
 .intro-gallery-card-set1{
     width: 20%;
+    transition: 1s;
 }
 .intro-gallery-card-set{
     width: 20%;
@@ -356,6 +359,8 @@ button:hover {
 .intro-gallery-card-set{
     transition: 2s;
 }
+
+/*Manually Control*/
 .navigation-manual{
     position: absolute;
     width: 90%;
@@ -365,7 +370,6 @@ button:hover {
 }
 .manual-btn{
     border: 2px solid #E97A7A;
-    background:#CD2020;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -376,7 +380,7 @@ button:hover {
 }
 .manual-btn:hover{
     border: 2px solid #CD2020;
-    background:#F2BAC9;
+    background:#E97A7A;
 }
 #radio1:checked ~ .intro-gallery-card-set1{
     margin-left: 0;
@@ -393,9 +397,52 @@ button:hover {
 #radio5:checked ~ .intro-gallery-card-set1{
     margin-left: -80%;
 }
-/*///////////////Pages with Image Slider End////////////////////////*/
 
-/*About Page Intro*/
+/*Manually Control*/
+.navigation-auto{
+    position: absolute;
+    width: 90%;
+    margin-top: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div{
+    border: 2px solid #E97A7A;
+    background:#FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    border: 2px solid #CD2020;
+    background:#E97A7A;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    border: 2px solid #CD2020;
+    background:#E97A7A;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    border: 2px solid #CD2020;
+    background:#E97A7A;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    border: 2px solid #CD2020;
+    background:#E97A7A;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    border: 2px solid #CD2020;
+    background:#E97A7A;
+}
+/*
+    Pages with Image Slider End ----------
+*/
+
+/*
+    About Page Intro ----------
+*/
 .intro-gallery-card-about {
 	width: 100%;
 	height: 80px;
