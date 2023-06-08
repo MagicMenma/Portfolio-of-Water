@@ -313,6 +313,21 @@ button:hover {
 	   object-fit: cover;
 }
 
+.intro-gallery-card-about {
+	position: relative;
+	z-index: -3;
+	width: 100%;
+	height: 85vh;
+	overflow: hidden;
+}
+
+.intro-gallery-card-about img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
 
 .intro-gallery-card-video{
     position: relative;
@@ -443,19 +458,6 @@ button:hover {
 /*
     About Page Intro ----------
 */
-.intro-gallery-card-about {
-	width: 100%;
-	height: 80px;
-	overflow: hidden;
-}
-
-.intro-gallery-card-about img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-}
-
 .product-img-card {
 	position: relative;
 	z-index: 0;
@@ -629,9 +631,14 @@ button:hover {
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
+.about_intro_title{
+    display: flex;
+    align-items: baseline;
+}
 
-.about_intro h1 {
-	margin-bottom: 0;
+.about_intro_title h4 {
+    margin-left: 1vh;
+    color:#B4B4B4;
 }
 
 .about_intro h3 {
@@ -879,6 +886,14 @@ footer {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+    
+    .intro-gallery-img {
+        position: relative;
+        overflow: hidden;
+        height: 80vh;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -907,7 +922,6 @@ footer {
 	.about_img {
 		margin-top: 2rem;
 	}
-    
     
 	.footer-link-container {
 		display: block;
