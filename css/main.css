@@ -606,8 +606,8 @@ button:hover {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin-top: 15rem;
-	margin-bottom: 18rem;
+	margin-top: 40vh;
+	margin-bottom: 40vh;
 }
 
 .about_img {
