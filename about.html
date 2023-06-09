@@ -13,11 +13,14 @@
             background-position: right bottom;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(function() {
           $.scrollify({
             section : ".scrollPart",
+            scrollbars: false,
+            setHeights: false,
           });
         });
     </script>
@@ -62,9 +65,11 @@
         </div>
     </div>
     
-    <div class="intro-gallery">
-        <div class="intro-gallery-card-about">
-            <img class="intro-gallery-img" src="img/about/004.png" alt="intro-gallery">
+    <div class="scrollPart">
+        <div class="intro-gallery">
+            <div class="intro-gallery-card-about">
+                <img class="intro-gallery-img" src="img/about/004.png" alt="intro-gallery">
+            </div>
         </div>
     </div>
     
@@ -86,8 +91,7 @@
     
 </body>
 <footer>
-    <div class="footer-title">
-    </div>
+    <div class="scrollPart">
     <div class="footer-nav">
         <div class="footer-text">
             <h2>Keep In Touch</h2>
@@ -104,5 +108,6 @@
             <a href="style-guide.html" class="nav_but">Style Guide</a><br>
             <a href="https://github.com/MagicMenma/MagicMenma-IAT339-P3-Portfolio-Project" class="nav_but">Github Repo</a></div>
     </div>
+        </div>
 </footer>
 </html>
