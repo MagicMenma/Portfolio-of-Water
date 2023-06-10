@@ -2,7 +2,7 @@
 $(function() {
     $.scrollify({
     section : ".scrollPart",
-    scrollbars: false,
+    scrollbars: true,
     setHeights: false,
     });
 });
@@ -18,3 +18,19 @@ $(function() {
         header.style.background = 'rgba(241, 231, 217, 0.7)';
     }
 });
+
+var counter = 2;
+setInterval(function(){
+    for (var i = 1; i <= 5; i++) {
+        var radio = document.getElementById('radio' + i);
+        if (radio.checked) {
+            counter = parseInt(radio.id.replace('radio', ''));
+            break;
+        }
+    }
+    counter++;
+    if(counter > 5){
+        counter = 1;
+    }
+    document.getElementById('radio' + counter).checked = true;
+}, 5000);

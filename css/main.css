@@ -1,7 +1,21 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background:rgba(242,186,201,0.5);
+} 
+::-webkit-scrollbar-thumb {
+    background:rgba(233,122,122,0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(233,122,122,1);
+}
+@supports (scrollbar-color: red blue){
+    *{
+        scrollbar-color: rgba(233,122,122,0.5) rgba(242,186,201,0.5);
+    }
+}
+
 body {
 	background-color: #F1E7D9;
 	margin-left: 5%;
@@ -289,9 +303,7 @@ button:hover {
 	background: #F2BAC9;
 	border-color: red;
 	color: #CD2020;
-	-webkit-transition-property: background-color, color;
 	transition-property: background-color, color;
-	-webkit-transition-duration: 0.25s;
 	transition-duration: 0.25s;
 }
 /*
