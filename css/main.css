@@ -673,11 +673,29 @@ button:hover {
 	padding-top: 30vh;
 	padding-bottom: 30vh;
 }
-
 .about_img {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
+}
+
+.workshop-gallery {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+	padding-top: 25vh;
+	padding-bottom: 30vh;
+}
+.workshop-widgets{
+    display: flex;
+    flex-direction: column;
+}
+.workshop-gallery steam-workshop{
+    width: 70vh;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 .bio-img {
