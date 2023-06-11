@@ -103,9 +103,9 @@ body {
     opacity: 1;
 }
 .navbar-brand-item img{
-    height: 8.5vh;
+    height: 5.25rem;
     position: absolute;
-    left: 7vh;
+    left: 6.5vh;
     top: 0.1vh;
 }
 
@@ -127,18 +127,17 @@ body {
 }
 
 .dropdown-item {
+    z-index: 999;
+    list-style: none;
+    background: #F1E7D9;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
 	width: 170px;
-	padding-right: 10px;
-	position: absolute;
-	z-index: 999;
-	list-style: none;
-	background: #F1E7D9;
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    top: 44px;
+    max-height: 0;
 	padding-left: 10px;
-	max-height: 0;
+    padding-right: 10px;
 	overflow: hidden;
-	-webkit-transition: max-height 0.5s ease-out;
 	transition: max-height 0.5s ease-out;
 	left: auto;
 }
@@ -148,7 +147,7 @@ body {
 }
 
 .nav-dropdown:hover .dropdown-item {
-	max-height: 250px;
+	max-height: 260px;
 }
 
 
@@ -259,7 +258,7 @@ a:hover {
 	transition-property: background-color;
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
-} /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
+}
 .intext-nav {
 	text-decoration-line: underline;
 }
@@ -696,6 +695,11 @@ button:hover {
     width: 70vh;
     margin-left: 1em;
     margin-bottom: 1em;
+}
+.workshop-gallery steam-workshop a:hover{
+    background: #F2BAC9;
+	color: #CD2020;
+    text-decoration-line: none;
 }
 
 .bio-img {
