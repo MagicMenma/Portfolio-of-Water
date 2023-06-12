@@ -93,7 +93,7 @@ body {
 }
 .navbar-brand a:hover > .navbar-brand-item-text{
     opacity: 0;
-    transition: opacity 0.2s ease-in;
+    transition: opacity 0.1s ease-in;
 }
 .navbar-brand-item-icon{
     opacity: 0;
@@ -103,7 +103,7 @@ body {
     opacity: 1;
 }
 .navbar-brand-item img{
-    height: 5.25rem;
+    height: 84px;
     position: absolute;
     left: 6.5vh;
     top: 0.1vh;
@@ -511,14 +511,7 @@ button:hover {
 /*
     About Page Intro ----------
 */
-.product-img-card {
-	position: relative;
-	z-index: 0;
-}
 
-.product-img {
-	width: 100%;
-}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -552,21 +545,10 @@ button:hover {
 	margin-top: 10rem;
 }
 
-.detail-gallery {
-    z-index: 0;
-	margin-top: 3rem;
-	margin-bottom: 10rem;
-	margin-left: auto;
-	margin-right: auto;
-    height: 63vh;
-    width: 80%;
-    object-fit: cover;
-    overflow: hidden;
-}
 
 .projects_intro {
     padding-top: 30vh;
-    padding-bottom: 45vh;
+    padding-bottom: 30vh;
 	text-align: center;
 }
 .projects_intro p {
@@ -574,15 +556,36 @@ button:hover {
     display: inline-block;
 }
 
+.detail-gallery{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+}
 .projects_inf {
-	margin-top: 10vh;
-    padding-top: 8vh;
+    width: 50%;
 	text-align: center;
 }
 .projects_inf p {
 	width: 60%;
     display: inline-block;
 }
+.product-img-card {
+	position: relative;
+	z-index: 0;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+}
+.product-img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .intro_inf{
     margin-top: 20vh;

@@ -33,4 +33,4 @@ setInterval(function(){
         counter = 1;
     }
     document.getElementById('radio' + counter).checked = true;
-}, 5000);
+}, 6000);
