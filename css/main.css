@@ -568,6 +568,7 @@ button:hover {
 .projects_inf {
     width: 50%;
 	text-align: center;
+/*    background-image:url("../img/cover.png");*/
 }
 .projects_inf p {
 	width: 60%;
