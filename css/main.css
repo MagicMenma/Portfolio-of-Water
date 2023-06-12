@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+<strong></strong>::-webkit-scrollbar {
     width: 1em;
 }
 ::-webkit-scrollbar-track {
@@ -505,13 +505,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    margin-left: 5vh;
 	padding-top: 25vh;
-	padding-bottom: 25vh;
+	padding-bottom: 20vh;
 }
 .projects_inf {
     width: 50%;
 	text-align: center;
-/*    background-image:url("../img/cover.png");*/
 }
 .projects_inf p {
 	width: 60%;
