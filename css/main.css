@@ -29,7 +29,6 @@ body {
     position: sticky;
     top: 0;
 }
-
 .container-fluid {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -53,14 +52,9 @@ body {
 }
 
 .navbar-brand-item {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
-
 .navbar-brand-item span {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 	text-transform: uppercase;
@@ -68,6 +62,12 @@ body {
 	font-weight: 500;
 	color: #E97A7A;
 	margin-top: 5px;
+}
+.navbar-brand-item img{
+    height: 84px;
+    position: absolute;
+    left: 6vh;
+    top: 0.1vh;
 }
 .navbar-brand a{
     text-decoration-line: none;
@@ -101,12 +101,6 @@ body {
 }
 .navbar-brand a:hover > .navbar-brand-item-icon{
     opacity: 1;
-}
-.navbar-brand-item img{
-    height: 84px;
-    position: absolute;
-    left: 6.5vh;
-    top: 0.1vh;
 }
 
 .navbar-links {
@@ -198,48 +192,14 @@ nav {
 /* 
     For the Style-guide End -------------------
 */
-
-
 .nav_but {
 	border: none;
 	color: white;
 	font-family: "arial black";
 }
-
-.nav_logo {
-	margin-left: 1rem;
-	margin-bottom: 1rem;
-	vertical-align: middle;
-}
-
 .styleGuide-header-nav .nav_but:hover {
 	background-color: #F2BAC9;
 }
-
-.bodyBlock {
-	font-family: sans-serif;
-	padding-top: 0rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
-}
-
-.introduce-nav {
-	margin-top: 1rem;
-	margin-bottom: 5rem;
-	width: 100%;
-}
-
-.element {
-	padding-bottom: 2rem;
-	border-top-width: 0.15rem;
-	border-top-style: solid;
-	border-top-color: black;
-	margin-bottom: 80pt;
-}
-
-
-
 /*
     Common Element -------------------
 */
@@ -249,7 +209,6 @@ a {
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
-
 a:hover {
 	padding: 0.5rem;
 	background: #F2BAC9;
@@ -260,65 +219,50 @@ a:hover {
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
-.intext-nav {
-	text-decoration-line: underline;
-}
-
 h1 {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
-
 h2 {
 	margin-top: 6rem;
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
-
 h3 {
 	font-style: italic;
 	margin-top: 1rem;
     font-size: 1.3rem;
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
-
 h4 {
 	margin-bottom: 0.25rem;
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
     font-size: 1.1rem;
 }
-
 p {
 	margin-top: 0;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 	width: 75%;
 }
-
 p a {
 	text-decoration: underline;
 }
-
 li, ol, label, input {
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 }
-
 ul {
 	list-style: none;
 }
-
 li {
 	margin-bottom: 0.8rem;
 }
-
 legend {
 	font-size: 1.5rem;
 	font-style: normal;
 	margin: 0;
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
-
 nav a:hover, nav a:focus {
 	text-decoration: none;
 }
-
 button {
 	margin-top: 0.8rem;
 	margin-bottom: 0.5rem;
@@ -332,7 +276,6 @@ button {
 	color: white;
 	font-family: "arial black";
 }
-
 button:hover {
 	background: #F2BAC9;
 	border-color: red;
