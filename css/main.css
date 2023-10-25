@@ -724,7 +724,6 @@ footer {
 }
 
 .footer-link-container {
-	border-left: 1px solid rgb(109, 109, 109);
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
@@ -738,7 +737,7 @@ footer {
 	flex-direction: column;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
-	align-items: flex-start;
+	align-items: flex-end;
 }
 
 .copyright{
