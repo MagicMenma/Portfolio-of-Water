@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Qiaohui Xu - The Art of Webcraft</title>
+        <title>Social Butterfly - </title>
         <link href="css/main.css" rel="stylesheet">
         <style>
         body {
@@ -25,7 +25,7 @@
                 <div class="navbar-brand"> 
                     <a class="navbar-brand-item" href="index.html"> 
                         <div class="navbar-brand-item-text">
-                            <span> Qiaohui Xu </span> 
+                            <span> Walter Xu </span> 
                         </div>
                         <div class="navbar-brand-item-icon">
                             <img src="img/1_2.png" alt="LOGO">
@@ -77,16 +77,16 @@
                         <div id="socialButterflyYoutubeVideo"></div>
                     </div>
                     <div class="intro-gallery-card-set">
-                        <img class="intro-gallery-img" src="img/tentnook/RenderMedium.png" alt="intro-gallery">
+                        <img class="intro-gallery-img" src="img/socialbutterfly/RenderMedium.png" alt="intro-gallery">
                     </div>
                     <div class="intro-gallery-card-set">
-                        <img class="intro-gallery-img" src="img/tentnook/insideSmall.png" alt="intro-gallery">
+                        <img class="intro-gallery-img" src="img/socialbutterfly/insideSmall.png" alt="intro-gallery">
                     </div>
                     <div class="intro-gallery-card-set">
-                        <img class="intro-gallery-img" src="img/tentnook/RenderSmall.png" alt="intro-gallery">
+                        <img class="intro-gallery-img" src="img/socialbutterfly/RenderSmall.png" alt="intro-gallery">
                     </div>
                     <div class="intro-gallery-card-set">
-                        <img class="intro-gallery-img" src="img/tentnook/RenderBig.png" alt="intro-gallery">
+                        <img class="intro-gallery-img" src="img/socialbutterfly/RenderBig.png" alt="intro-gallery">
                     </div>
 
                     <!--automatic control-->
@@ -123,13 +123,13 @@
             <div class="scrollPart">
                 <div class="detail-gallery">
                     <div class="projects_inf">
-                        <h1>Research & Data Collection</h1>
-                        <p>At the suggestion of Professor Kenneth, I learned more about Holland Park and began to collect data about the park. Accurate dimensional scale data is necessary to build the scene modeling, which not only helps to ensure the realism and credibility of the scene, but also improves the efficiency. Therefore, I spent a lot of time and effort to find and organize this data to ensure that I could move forward smoothly in the scene modeling process.</p>
+                        <h1>OpenCV & Data Exchange</h1>
+                        <p>The main data acquisition device in the system is a <strong>webcam</strong>, which is connected to the host computer via a USB interface. The task of this webcam is to acquire the motion data of the two participants. The motion data of the participants is transferred to the Python environment as soon as it is captured. We use the <a href="https://opencv.org/">OpenCV library</a> here to process the video stream.</p>
 
-                        <p>The website <a href="https://cosmos.surrey.ca/external/">https://cosmos.surrey.ca/external/</a>, established by City of Surrey, provides a full range of data on Holland Park, including path, trees, buildings, roads, etc. Meanwhile, Google Maps and Google Earth provide street view, satellite images, 3D building images and 3D topographic images.</p>
+                        <p>After motion analysis, the system identifies and records key location points on the participant's body, with each participant's data consisting of 32 different points. I then combine and serialize this data and apply a smoothing algorithm on two frames to improve the motion quality. The serialized data string is transferred to the Unity software through a <strong>server address port</strong>.</p>
                     </div>
                     <div class="product-img-card">
-                        <img class="product-img" src="img/tentnook/icon.png" alt="intro-gallery">
+                        <img class="product-img" src="img/socialbutterfly/demonstration.png" alt="intro-gallery">
                     </div>
                 </div>
             </div>
@@ -137,13 +137,13 @@
             <div class="scrollPart">
                 <div class="detail-gallery">
                     <div class="projects_inf">
-                        <h1>3D Modeling & UV Editing</h1>
+                        <h1>Problem Solving & C# Coding</h1>
                         <p>Once I had gathered all the necessary reference materials, I began the modeling process. This involved creating a basic 3D model in Blender, which I could then refine and add detail to over time.</p>
 
                         <p>As part of the modeling process, I also had to ensure that the model was properly UV mapped. This involves editing the UVs of the model so that materials can be applied correctly.UV editing can be a time-consuming process, but it's essential for creating high-quality 3D models. It allows for greater control over how textures are applied to the model, and can help to ensure that the final product looks as realistic as possible.</p>
                     </div>
                     <div class="product-img-card">
-                        <img class="product-img" src="img/tentnook/poster.png" alt="intro-gallery">
+                        <img class="product-img" src="img/socialbutterfly/poster.png" alt="intro-gallery">
                     </div>
                 </div>
             </div>
@@ -151,13 +151,27 @@
             <div class="scrollPart">
                 <div class="detail-gallery">
                      <div class="projects_inf">
-                        <h1>Showcase & Presentation</h1>
+                        <h1>Enviroment & Levels Setting</h1>
                         <p>After completing the 3D model in Blender, I imported it into Twinmotion to further enhance the project. Twinmotion is a powerful real-time rendering software that adds textures, materials, and other visual elements to the 3D model.</p>
 
                         <p>One of the first things I did in Twinmotion was to add texture maps to the model. This involved applying materials to various surfaces of the model, such as the walls of buildings, pavement, and grass. I also added plant and vegetation materials to the model to make it look more realistic and natural. Another important feature was the ability to add roads and driveways to the model. I created a detailed network of roads around the park to make the model more like a realistic environment.</p>
                     </div>
                     <div class="product-img-card">
-                        <img class="product-img" src="img/tentnook/presentation.png" alt="intro-gallery">
+                        <img class="product-img" src="img/socialbutterfly/presentation.png" alt="intro-gallery">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollPart">
+                <div class="detail-gallery">
+                     <div class="projects_inf">
+                        <h1>Showcase & User Testing</h1>
+                        <p>After completing the 3D model in Blender, I imported it into Twinmotion to further enhance the project. Twinmotion is a powerful real-time rendering software that adds textures, materials, and other visual elements to the 3D model.</p>
+
+                        <p>One of the first things I did in Twinmotion was to add texture maps to the model. This involved applying materials to various surfaces of the model, such as the walls of buildings, pavement, and grass. I also added plant and vegetation materials to the model to make it look more realistic and natural. Another important feature was the ability to add roads and driveways to the model. I created a detailed network of roads around the park to make the model more like a realistic environment.</p>
+                    </div>
+                    <div class="product-img-card" style="display: flex; justify-content: center;">
+                        <img class="product-img" src="img/socialbutterfly/showcase.png" alt="intro-gallery" style="height: 100%; width: auto; ">
                     </div>
                 </div>
             </div>
