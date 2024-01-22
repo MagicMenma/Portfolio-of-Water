@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Social Butterfly - </title>
+        <title>Social Butterfly - Computer Vision Interactive Design</title>
         <link href="css/main.css" rel="stylesheet">
         <style>
         body {
@@ -44,7 +44,7 @@
                                     <li><a href="iwantyou.html">I Want You</a></li>
                                 </ul>
                             </div>
-                            <a href="about.html">GALLERY</a>
+                            <a href="gallery.html">GALLERY</a>
                             <a href="about.html">ABOUT</a> 
                         </div>
                     </div>
@@ -114,7 +114,7 @@
             <div class="scrollPart">
                 <div class="projects_intro">
                     <h1>Social Butterfly</h1>
-                    <p>In the final project of <strong>IAT 320 Body Interface</strong>, we delve into the innovative use of the human body as an input device, extending beyond traditional interfaces. This virtual game, crafted for two players, not only serves as an engaging platform but also as a means to explore and enhance social connections. Our approach integrates the sophisticated use of <strong>OpenCV</strong> in Python for computer vision, allowing for an immersive <strong>interaction design</strong> through camera-based tracking.</p>
+                    <p>In the final project of <strong>IAT 320 Body Interface</strong>, we delve into the innovative use of the human body as an input device, extending beyond traditional interfaces. This virtual game, crafted for two players, not only serves as an engaging platform but also as a means to explore and enhance social connections. Our approach integrates the sophisticated use of <strong>computer vision</strong> (OpenCV) in Python for computer vision, allowing for an immersive <strong>interaction design</strong> through camera-based tracking.</p>
                     <p><strong>Instructor:</strong> Philippe Pasquier</p>
                     <p><strong>Team Members:</strong><br><strong>Baidiya Huang</strong> ( Sound Designer, QA Tester )<br> <strong>Delai Gao</strong> ( Enviroment Builder, Art Director)<br><strong>Ethan Tang</strong> ( Researcher, Ideator, Programmer, QA Tester )<br><strong>XingChen Cao</strong> ( Researcher, Ideator, Effect Creator )<br><strong>Walter Xu</strong> ( Team Leader, Game Designer, Programming Director )<br></p>
                 </div>
@@ -128,8 +128,8 @@
 
                         <p>After motion analysis, the system identifies and records key location points on the participant's body, with each participant's data consisting of 32 different points. I then combine and serialize this data and apply a smoothing algorithm on two frames to improve the motion quality. The serialized data string is transferred to the Unity software through a <strong>server address port</strong>.</p>
                     </div>
-                    <div class="product-img-card">
-                        <img class="product-img" src="img/socialbutterfly/demonstration.png" alt="intro-gallery">
+                    <div class="product-img-card" style="display: flex; justify-content: center;">
+                        <img class="product-img" src="img/socialbutterfly/workflow.png" alt="intro-gallery" style="height: 100%; width: auto; ">
                     </div>
                 </div>
             </div>
@@ -138,12 +138,12 @@
                 <div class="detail-gallery">
                     <div class="projects_inf">
                         <h1>Problem Solving & C# Coding</h1>
-                        <p>Once I had gathered all the necessary reference materials, I began the modeling process. This involved creating a basic 3D model in Blender, which I could then refine and add detail to over time.</p>
+                        <p><strong>Incorporating interactive elements</strong> is a pivotal aspect of our project. Navigating the complexities of 3D space, particularly about the camera's field of view, poses challenges for embedding fixed interactive elements within <strong>a two-dimensional interface</strong>. Here is one example of the many solutions.</p>
 
-                        <p>As part of the modeling process, I also had to ensure that the model was properly UV mapped. This involves editing the UVs of the model so that materials can be applied correctly.UV editing can be a time-consuming process, but it's essential for creating high-quality 3D models. It allows for greater control over how textures are applied to the model, and can help to ensure that the final product looks as realistic as possible.</p>
+                        <p>To create a <strong>2D collision object</strong>, I used a novel solution - the use of a cylinder with a collision volume. The cylinder was programmed in C# to fix its initial position at the midpoint of the plane shared by the two characters, and to use the position of the camera as an orientation reference. Regardless of the camera angle, the <strong>cylinder is always oriented towards the camera</strong>, rendered as a 2D circle, thus maintaining the illusion of a flat interface.</p>
                     </div>
-                    <div class="product-img-card">
-                        <img class="product-img" src="img/socialbutterfly/poster.png" alt="intro-gallery">
+                    <div class="product-img-card" style="display: flex; justify-content: center;">
+                        <img class="product-img" src="img/socialbutterfly/problemSolving.png" alt="intro-gallery" style="height: 100%; width: auto; ">
                     </div>
                 </div>
             </div>
@@ -151,13 +151,13 @@
             <div class="scrollPart">
                 <div class="detail-gallery">
                      <div class="projects_inf">
-                        <h1>Enviroment & Levels Setting</h1>
-                        <p>After completing the 3D model in Blender, I imported it into Twinmotion to further enhance the project. Twinmotion is a powerful real-time rendering software that adds textures, materials, and other visual elements to the 3D model.</p>
+                        <h1>Levels & Enviroment Setting</h1>
+                        <p>We have designed <strong>three levels</strong> of varying difficulty, ranging from two targets in the first level to four targets in the third level. The difficulty progressively increases as two participants are required to simultaneously touch all the targets. After completing the objectives, scoring takes place, culminating in a final results page.</p>
 
-                        <p>One of the first things I did in Twinmotion was to add texture maps to the model. This involved applying materials to various surfaces of the model, such as the walls of buildings, pavement, and grass. I also added plant and vegetation materials to the model to make it look more realistic and natural. Another important feature was the ability to add roads and driveways to the model. I created a detailed network of roads around the park to make the model more like a realistic environment.</p>
+                        <p>Upon receiving the initial draft of the map environment from our team members, I made adjustments to the <strong>sky texture and lighting</strong>. This combination of sky and lighting conveys distinct time information, transitioning from late night to dawn and finally to sunrise. Each time corresponds to a different stylistic level, providing participants with clear cues for the varying levels.</p>
                     </div>
-                    <div class="product-img-card">
-                        <img class="product-img" src="img/socialbutterfly/presentation.png" alt="intro-gallery">
+                    <div class="product-img-card" style="display: flex; justify-content: center;">
+                        <img class="product-img" src="img/socialbutterfly/levels.png" alt="intro-gallery" style="height: 100%; width: auto; ">
                     </div>
                 </div>
             </div>
