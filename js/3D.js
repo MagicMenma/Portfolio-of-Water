@@ -1,9 +1,9 @@
 ﻿// Import the TFRFF.js library
 import * as THREE from "https://cdn.skypack.dev/three@0.132.2/build/three.module.js";
 
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
 
 const container = document.querySelector('#scene-container');
