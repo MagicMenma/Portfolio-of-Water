@@ -1,15 +1,16 @@
 ﻿// Import the TFRFF.js library
-// import * as THREE from "https://cdn.skypack.dev/three@0.132.2/build/three.module.js";
-import * as THREE from './vendor/three/build/three.module.js';
+import * as THREE from "https://cdn.skypack.dev/three@0.132.2/build/three.module.js";
 
 // import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-// import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from './vendor/three/examples/jsm/loaders/GLTFLoader.js';
-// import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+const container = document.querySelector('#scene-container');
 
 let objectHead;
 
@@ -31,14 +32,14 @@ undefined, function ( error ) {
 	console.error( error );
 } );
 
-const renderer = new THREE.WebGLRenderer({alpha: true});
+//const renderer = new THREE.WebGLRenderer({alpha: true});
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 //render place
-const container = document.querySelector('#scene-container');
 container.append(renderer.domElement);
 
-camera.position.z = -5;
+//camera.position.z = -5;
 
 function animate(){
   requestAnimationFrame(animate);
