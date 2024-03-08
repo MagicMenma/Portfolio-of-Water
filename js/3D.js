@@ -14,8 +14,9 @@ let objectHead;
 
 let controls
 
-let loader = new THREE.GLTFLoader();
-loader.load( 'models/Head/Head.glb', function ( gltf ) {
+const loader = new GLTFLoader();
+loader.load( 'models/Head/Head.glb', 
+function ( gltf ) {
 	objectHead = gltf.scene;
   scene.add( objectHead );
 }, 
