@@ -10,6 +10,8 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
+const container = document.querySelector('#scene-container');
+
 let objectHead;
 
 let controls
@@ -24,7 +26,6 @@ function ( gltf ) {
   }else{
     console.log('Object NOT Loaded');
   }
-  renderer.render(scene, camera);
 }, 
 function (xhr){
   console.log((xhr.loader / xhr.total * 100) + '% loader');
@@ -36,10 +37,6 @@ undefined, function ( error ) {
 //const renderer = new THREE.WebGLRenderer({alpha: true});
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
-
-//render place
-const container = document.querySelector('#scene-container');
-container.append(renderer.domElement);
 
 camera.position.z = 5;
 
@@ -54,3 +51,8 @@ window.addEventListener("resize", function(){
 });
 
 animate();
+
+//render place
+container.append(renderer.domElement);
+
+renderer.render(scene, camera);
