@@ -42,7 +42,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 //   renderer.setSize(window.innerWidth, window.innerHeight);
 // });
 
-animate();
+//animate();
 
 //render place
 container.append(renderer.domElement);
