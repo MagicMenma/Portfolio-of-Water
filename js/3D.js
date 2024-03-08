@@ -7,6 +7,7 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/js
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
+const container = document.querySelector('#scene-container');
 
 // Create a camera
 const fov = 35; // AKA Field of View
@@ -18,8 +19,6 @@ const camera = new PerspectiveCamera(fov, aspect, near, far);
 
 camera.position.set(0, 0, 10);
 camera.lookAt(0, 0, 0);
-
-const container = document.querySelector('#scene-container');
 
 let controls
 
