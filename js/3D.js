@@ -19,6 +19,9 @@ loader.load( 'models/Head/Head.glb',
 function ( gltf ) {
 	objectHead = gltf.scene;
   scene.add( objectHead );
+  if(objectHead != null){
+    console.log('Object Loaded');
+  }
 }, 
 function (xhr){
   console.log((xhr.loader / xhr.total * 100) + '% loader');
@@ -34,7 +37,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 const container = document.querySelector('#scene-container');
 container.append(renderer.domElement);
 
-camera.position.z = 5;
+camera.position.z = -5;
 
 function animate(){
   requestAnimationFrame(animate);
