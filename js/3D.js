@@ -7,28 +7,19 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/js
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xdddddd);
 
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.set(0, 0, 10);
+camera.lookAt(0, 0, 0);
 
 const container = document.querySelector('#scene-container');
 
-let objectHead;
-
 let controls
 
-const loader = new THREE.GLTFLoader();
+const loader = new GLTFLoader();
 loader.load( 'models/Horse.glb', 
 function ( gltf ) {
-	objectHead = gltf.scene;
-  scene.add( objectHead );
-
-  if(objectHead != null){
-    console.log('Object Loaded');
-  }else{
-    console.log('Object NOT Loaded');
-  }
+  scene.add( gltf.scene );
 }, 
 function (xhr){
   console.log((xhr.loader / xhr.total * 100) + '% loader');
