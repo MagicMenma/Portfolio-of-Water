@@ -12,6 +12,9 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 camera.position.set(0, 0, 10);
 camera.lookAt(0, 0, 0);
 
+hlight = new THREE.AmbientLight(0x404040, 100);
+scene.add(hlight);
+
 const container = document.querySelector('#scene-container');
 
 let controls
