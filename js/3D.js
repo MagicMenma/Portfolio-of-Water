@@ -30,8 +30,8 @@ undefined, function ( error ) {
 
 const loader2 = new GLTFLoader();
 loader2.load( 'models/Head/Head.glb', 
-function ( gltf ) {
-  scene.add( gltf.scene );
+function ( glb ) {
+  scene.add( glb.scene );
 }, );
 
 //const renderer = new THREE.WebGLRenderer({alpha: true});
