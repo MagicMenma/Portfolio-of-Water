@@ -16,7 +16,7 @@ camera.lookAt(0, 0, 0);
 
 let controls
 
-let loader = new THREE.GLTFLoader();
+const loader = new GLTFLoader();
 loader.load( 'models/Horse.glb', 
 function ( gltf ) {
   scene.add( gltf.scene );
@@ -28,7 +28,7 @@ undefined, function ( error ) {
 	console.error( error );
 } );
 
-let loader2 = new THREE.GLTFLoader();
+const loader2 = new GLTFLoader();
 loader2.load( 'models/Head/Head.glb', 
 function ( gltf ) {
   scene.add( gltf.scene );
