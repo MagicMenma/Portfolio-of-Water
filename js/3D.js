@@ -10,8 +10,6 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-const container = document.querySelector('#scene-container');
-
 let objectHead;
 
 let controls
@@ -19,11 +17,14 @@ let controls
 const loader = new GLTFLoader();
 loader.load( 'models/Head/Head.glb', 
 function ( gltf ) {
-	// objectHead = gltf.scene;
-  scene.add( gltf.scene );
+	objectHead = gltf.scene;
+  scene.add( objectHead );
   if(objectHead != null){
     console.log('Object Loaded');
+  }else{
+    console.log('Object NOT Loaded');
   }
+  renderer.render(scene, camera);
 }, 
 function (xhr){
   console.log((xhr.loader / xhr.total * 100) + '% loader');
@@ -37,9 +38,10 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 //render place
+const container = document.querySelector('#scene-container');
 container.append(renderer.domElement);
 
-//camera.position.z = -5;
+camera.position.z = 5;
 
 function animate(){
   requestAnimationFrame(animate);
