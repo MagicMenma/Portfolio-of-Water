@@ -12,13 +12,11 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 camera.position.set(0, 0, 10);
 camera.lookAt(0, 0, 0);
 
-scene.add(hlight);
-
 const container = document.querySelector('#scene-container');
 
 let controls
 
-const loader = new GLTFLoader();
+let loader = new THREE.GLTFLoader();
 loader.load( 'models/Horse.glb', 
 function ( gltf ) {
   scene.add( gltf.scene );
@@ -29,6 +27,14 @@ function (xhr){
 undefined, function ( error ) {
 	console.error( error );
 } );
+
+let loader2 = new THREE.GLTFLoader();
+loader2.load( 'models/Head/Head.glb', 
+function ( gltf ) {
+  scene.add( gltf.scene );
+}, );
+
+
 
 //const renderer = new THREE.WebGLRenderer({alpha: true});
 const renderer = new THREE.WebGLRenderer();
