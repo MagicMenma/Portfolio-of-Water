@@ -1,24 +1,12 @@
 ﻿// Import the TFRFF.js library
 import * as THREE from "https://cdn.skypack.dev/three@0.132.2/build/three.module.js";
 
-import {
-  BoxBufferGeometry,
-  Color,
-  Mesh,
-  MeshBasicMaterial,
-  PerspectiveCamera,
-  Scene,
-  WebGLRenderer,
-} from "https://cdn.skypack.dev/three@0.132.2/build/three.module.js";
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/GLTFLoader.js";
 
-// Get a reference to the container element that will hold our scene
-const container = document.querySelector('#scene-container');
-
-// create a Scene
-const scene = new Scene();
-
-// Set the background color
-scene.background = new Color('skyblue');
+const scene = new THREE.Scene();
 
 // Create a camera
 const fov = 35; // AKA Field of View
@@ -28,33 +16,64 @@ const far = 100; // the far clipping plane
 
 const camera = new PerspectiveCamera(fov, aspect, near, far);
 
-// every object is initially created at ( 0, 0, 0 )
-// move the camera back so we can view the scene
 camera.position.set(0, 0, 10);
+camera.lookAt(0, 0, 0);
+
+const container = document.querySelector('#scene-container');
+
+let controls
 
 // create a geometry
 const geometry = new BoxBufferGeometry(2, 2, 2);
-
 // create a default (white) Basic material
 const material = new MeshBasicMaterial();
-
 // create a Mesh containing the geometry and material
 const cube = new Mesh(geometry, material);
 
-// add the mesh to the scene
-scene.add(cube);
+const loader = new GLTFLoader();
+loader.load( 'models/Horse.glb', 
+function ( gltf ) {
+  scene.add( gltf.scene );
+}, 
+function (xhr){
+  console.log((xhr.loader / xhr.total * 100) + '% loader');
+},
+undefined, function ( error ) {
+	console.error( error );
+} );
 
-// create the renderer
-const renderer = new WebGLRenderer();
+const loader2 = new GLTFLoader();
+loader2.load( 'models/Head/Head.glb', 
+function ( glb ) {
+  scene.add( glb.scene );
+}, );
 
-// next, set the renderer to the same size as our container element
-renderer.setSize(container.clientWidth, container.clientHeight);
+const topLight = new THREE.DirectionalLight('white', 10);
+topLight.position.set(500, 500, 500);
+topLight.castShadow = true;
+scene.add(topLight);
 
-// finally, set the pixel ratio so that our scene will look good on HiDPI displays
-renderer.setPixelRatio(window.devicePixelRatio);
+const ambientLight = new THREE.AmbientLight('white', 100);
+scene.add(ambientLight);
 
-// add the automatically created <canvas> element to the page
+//const renderer = new THREE.WebGLRenderer({alpha: true});
+const renderer = new THREE.WebGLRenderer({alpha: true});
+renderer.setSize( window.innerWidth, window.innerHeight );
+
+// function animate(){
+//   requestAnimationFrame(animate);
+// }
+
+// window.addEventListener("resize", function(){
+//   camera.aspect = window.innerWidth / window.innerHeight;
+//   camera.updateProjectionMatrix();
+//   renderer.setSize(window.innerWidth, window.innerHeight);
+// });
+
+//animate();
+
+//render place
 container.append(renderer.domElement);
+//document.getElementById("scene-container").appendChild(renderer.domElement);
 
-// render, or 'create a still image', of the scene
 renderer.render(scene, camera);
