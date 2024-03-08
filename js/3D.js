@@ -17,8 +17,8 @@ let controls
 const loader = new GLTFLoader();
 loader.load( 'models/Head/Head.glb', 
 function ( gltf ) {
-	objectHead = gltf.scene;
-  scene.add( objectHead );
+	// objectHead = gltf.scene;
+  scene.add( gltf.scene );
   if(objectHead != null){
     console.log('Object Loaded');
   }
