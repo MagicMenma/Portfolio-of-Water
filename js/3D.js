@@ -11,11 +11,11 @@ const container = document.querySelector('#scene-container');
 
 // Create a camera
 const fov = 35; // AKA Field of View
-const aspect = container.clientWidth / container.clientHeight;
+const aspect = window.innerWidth / window.innerHeight;
 const near = 0.1; // the near clipping plane
 const far = 100; // the far clipping plane
 
-const camera = new PerspectiveCamera(fov, aspect, near, far);
+const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
 camera.position.set(0, 0, 10);
 camera.lookAt(0, 0, 0);
@@ -28,6 +28,7 @@ const geometry = new BoxBufferGeometry(2, 2, 2);
 const material = new MeshBasicMaterial();
 // create a Mesh containing the geometry and material
 const cube = new Mesh(geometry, material);
+scene.add(cube);
 
 const loader = new GLTFLoader();
 loader.load( 'models/Horse.glb', 
