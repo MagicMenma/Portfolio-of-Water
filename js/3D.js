@@ -27,7 +27,7 @@ container.append(renderer.domElement);
 THREE.Cache.enabled = true;
 
 const loader = new GLTFLoader();
-loader.load( 'models/Head/Head.glb', 
+loader.load( 'models/Head/HeadV2.glb', 
 (gltf) => {
   const mesh = gltf.scene;
   mesh.position.set(0,0.5,0);
