@@ -18,20 +18,29 @@ const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.set(10, 0, 0);
 camera.lookAt(0, 0, 0);
 
+let object;
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2; 
+ 
 const renderer = new THREE.WebGLRenderer({alpha: true},{antialias: true});
 renderer.setSize( container.clientWidth, container.clientHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.addEventListener('change', renderer);
+
 container.append(renderer.domElement);
+
 
 THREE.Cache.enabled = true;
 
 const loader = new GLTFLoader();
-loader.load( 'models/Head/HeadV2.glb', 
+loader.load( 'models/Head/HeadV3.glb', 
 (gltf) => {
-  const mesh = gltf.scene;
-  mesh.position.set(0,0.5,0);
-  scene.add( mesh );
+  object = gltf.scene;
+  object.position.set(0,0.5,0);
+  scene.add( object );
 }, 
 function (xhr){
   console.log((xhr.loader / xhr.total * 100) + '% loader');
@@ -40,16 +49,24 @@ undefined, function ( error ) {
 	console.error( error );
 } );
 
-const topLight = new THREE.DirectionalLight('white', 3);
-topLight.position.set(500, 200, 200);
+const topLight = new THREE.DirectionalLight('white', 5);
+topLight.position.set(1000, 200, 100);
 topLight.castShadow = true;
 scene.add(topLight);
 
 const ambientLight = new THREE.AmbientLight('white', 1);
 scene.add(ambientLight);
 
+
+
 function animate(){
   requestAnimationFrame(animate);
+
+  if (object) {
+    object.rotation.y = 4.9 + mouseX / window.innerWidth * 2.75;
+    object.rotation.z = - ( -0.5 + mouseY * 1 / window.innerHeight );
+  }
+
   renderer.render(scene, camera);
 }
 
@@ -58,5 +75,10 @@ function animate(){
 //   camera.updateProjectionMatrix();
 //   renderer.setSize(window.innerWidth, window.innerHeight);
 // });
+
+document.onmousemove = (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+}
 
 animate();
