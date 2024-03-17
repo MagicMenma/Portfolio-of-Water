@@ -34,7 +34,7 @@ let isMouseDown = false;
 let autoRotateAngle = 0;
 const maxAngle = Math.PI / 2.8;
 const minAngle = -Math.PI / 2.8;
-let autoRotateSpeed = 0.0015;
+let autoRotateSpeed = 0.0005;
 
 container.append(renderer.domElement);
 
