@@ -30,6 +30,12 @@ renderer.setPixelRatio(window.devicePixelRatio);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.addEventListener('change', renderer);
 
+let isMouseDown = false;
+let autoRotateAngle = 0;
+const maxAngle = Math.PI / 2.8;
+const minAngle = -Math.PI / 2.8;
+let autoRotateSpeed = 0.0015;
+
 container.append(renderer.domElement);
 
 
@@ -57,28 +63,44 @@ scene.add(topLight);
 const ambientLight = new THREE.AmbientLight('white', 1);
 scene.add(ambientLight);
 
+document.onmousemove = (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+}
 
+document.addEventListener('mousedown', () => {
+  isMouseDown = true;
+});
+
+document.addEventListener('mouseup', () => {
+  if (object) {
+    object.rotation.y = 0;
+    object.rotation.z = 0;
+  }
+  isMouseDown = false;
+});
 
 function animate(){
   requestAnimationFrame(animate);
 
   if (object) {
-    object.rotation.y = 4.9 + mouseX / window.innerWidth * 2.75;
-    object.rotation.z = - ( -0.5 + mouseY * 1 / window.innerHeight );
+    if (isMouseDown) {
+      // Manual Rotation
+      object.rotation.y = 4.9 + mouseX / window.innerWidth * 3;
+      object.rotation.z = -( -0.5 + mouseY * 1 / window.innerHeight );
+    } else {
+      // Auto Rotation
+      autoRotateAngle += autoRotateSpeed;
+      if (autoRotateAngle > maxAngle || autoRotateAngle < minAngle) {
+        autoRotateSpeed *= -1;
+      }
+      object.rotation.y += autoRotateSpeed;
+    }
   }
 
   renderer.render(scene, camera);
 }
 
-// window.addEventListener("resize", function(){
-//   camera.aspect = window.innerWidth / window.innerHeight;
-//   camera.updateProjectionMatrix();
-//   renderer.setSize(window.innerWidth, window.innerHeight);
-// });
 
-document.onmousemove = (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-}
 
 animate();
