@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-        <title>Walter Xu - The Art of Webcraft</title>
+        <meta charset="utf-8">
+        <title>Social Butterfly - Computer Vision Interactive Design</title>
         <link href="css/main.css" rel="stylesheet">
         <style>
         body {
@@ -15,8 +15,8 @@
         </style>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
         <script src="js/script.js"></script>
-        <script src="js/refresh.js"></script>
     </head>
 
     <body>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="navbar-links">
                     <div id="myNav" class="overlay">
-                        <div class="overlay-content"> 
+                        <div class="overlay-content">
                             <div class="nav-dropdown">
                                 <a href="">WORK ▾</a> 
                                 <ul class="dropdown-item">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </header>
-
+    
         <div class="rose-container">
             <div class="rose-set">
                 <div><img src="img/rose/1.png" alt="rose"></div>
@@ -63,66 +63,46 @@
         </div>
 
         <div class="scrollPart">
-            <div class="intro-gallery">
-                <div class="intro-gallery-card">
-                    <script type="module" src="js/3D.js"></script>
-                    <div id="scene-container"></div>
-                    <img class="intro-gallery-img" src="img/introGallery_Big.png" alt="intro-gallery">
-                    </div>
-                </div>
+            <div class="intro-gallery-slider">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iklicYpNWcw?si=ZpxMXEtfQQNu8d-K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
+    
 
         <div class="porjects-gallery">
             <div class="scrollPart">
-                <div style="margin-top: 5vh; margin-bottom: 10vh" class="projects_intro">
-                    <h1 style="font-style: italic; margin-bottom: 5vh; padding-top: 5vh">Designed with Elegance</h1>
-                    <h4>More than just designs - they are a statement.<br> Each one is a masterpiece, a delightfully ingenious piece that has been carefully crafted.</h4>
+                <div class="projects_intro">
+                    <h1>Boat - VR Game Design</h1>
+                    <p>In the VR game design of <strong>IAT 445 Immersive Environments</strong>, Our project for a <strong>horror puzzle / escape room</strong> type game offers a mini-horror experience that doesn't rely on excessive gore and traditional jump scares to create fear. Instead, we focus on building tension and suspense through <strong>atmospheric storytelling and a gradually unfolding narrative</strong> that culminates in a surprising ending.</p>
+                    <p><strong>Instructor:</strong> Philippe Pasquier</p>
+                    <p><strong>Team Members:</strong><br>
+                        <strong>Walter Xu ( Team Leader, Game Design Lead, Scenic Designer)</strong><br>
+                        Ethan Allwood ( Programmer Lead, Asset Creator)<br> 
+                        Ningzhi Tai ( Narrative Designer Lead)<br>
+                        Xinran Han ( Music Designer Lead)</p>
                 </div>
             </div>
-
+        
             <div class="scrollPart">
-                <div class="projectsList_container">
-                    <a class="projects_listing" href="audu.html">
-                        <div class="projectsList">
-                            <img src="img/project1.png" alt="#">
-                            <h3 class="heading3">AUDU - User Experience Design</h3>
-                            <h4 class="heading4">Modelling / Prototype Lead</h4>
-                            <p>Blender + 3D Print</p>
-                        </div>
-                    </a>
-                    <a class="projects_listing" href="socialbutterfly.html">
-                        <div class="projectsList">
-                            <img src="img/project2.png" alt="#">
-                            <h3 class="heading3">Social Butterfly - Body Interface Game Design</h3>
-                            <h4 class="heading4">Unity / Programming Lead</h4>
-                            <p>Unity + Blender</p>
-                        </div>
-                    </a>
+                <div class="detail-gallery">
+                    <div class="projects_inf">
+                        <h1>External Link</h1>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=_LZOcQ6G_T4">Project Trailer/Pitch Video</a>
+                        </p>
+                        <p>
+                            <a href="https://docs.google.com/document/d/1KYidr16bHio2Vj0k9ltw5heofr4ux-1_jzJOYStqorY/edit?usp=sharing">VR Design Document
+                            </a>
+                        </p>
+                    </div>
+                    <div class="product-img-card">
+                        <img class="product-img" src="img/boat/poster.png">
+                        <p>Game Poster</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="scrollPart">
-                <div class="projectsList_container" style="margin-top: 10%;">
-                    <a class="projects_listing" href="thesunset.html">
-                        <div class="projectsList">
-                            <img src="img/project3.png" alt="#">
-                            <h3 class="heading3">The Sunset in Holland Park - Spatial Design</h3>
-                            <h4 class="heading4">Modelling / Visual Lead</h4>
-                            <p>Rhino + Blender + TwimMotion + Keyshot</p>
-                        </div>
-                    </a>
-                    <a class="projects_listing" href="iwantyou.html">
-                        <div class="projectsList">
-                            <img src="img/project4_1.png" alt="#">
-                            <h3 class="heading3">I Want You - Motion Graphic Animation</h3>
-                            <h4 class="heading4">Video Creator</h4>
-                            <p>After Effects</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        
+    
     </body>
     <footer>
         <div class="scrollPart">
@@ -140,7 +120,4 @@
             </div>
         </div>
     </footer>
-    <div class="copyright">
-        <p>Copyright © 2024 QiaohuiXu All Rights Reserved - Update2.24</p>
-    </div>
 </html>
