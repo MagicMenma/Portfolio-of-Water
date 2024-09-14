@@ -16,6 +16,141 @@
     }
 }
 
+/*
+    Common Element -------------------
+*/
+a {
+	padding: 0.5rem;
+	color: #2F2F2F;
+	text-decoration-line: none;
+	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+a:hover {
+	padding: 0.5rem;
+	background: #F2BAC9;
+	color: #CD2020;
+	text-decoration-line: none;
+	-webkit-transition-property: background-color;
+	transition-property: background-color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+h1 {
+	color: #2F2F2F;
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h2 {
+	margin-top: 6rem;
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h3 {
+	font-style: italic;
+	margin-top: 1rem;
+    font-size: 1.3rem;
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+h4 {
+	margin-bottom: 0.25rem;
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+    font-size: 1.1rem;
+}
+p {
+	color: #2F2F2F;
+	margin-top: 0;
+	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+	width: 75%;
+}
+p a {
+	text-decoration: underline;
+}
+.text-combination{
+	display: inline-flex;
+	width: 80%;
+}
+.fix-text{
+	font-family: "Playfair Display SemiBold";
+	font-size: 64pt; color: #E97A7A;
+}
+.dynamic-text{
+	font-family: "Playfair Display SemiBold";
+	font-size: 64pt; color: #E97A7A;
+	position: relative;
+}
+.dynamic-text::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #F1E7D9;
+	border-left: 2px solid #E97A7A;
+	animation: typing 3s steps(10) 1 forwards, blink-caret 1.5s step-end infinite;
+}
+@keyframes typing {
+	35%{
+		left: 0;
+	}
+	45%{
+		left: 28%;
+	}
+	60%{
+		left: 28%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #E97A7A;
+    }
+}
+
+li, ol, label, input {
+	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
+}
+ul {
+	list-style: none;
+}
+li {
+	margin-bottom: 0.8rem;
+}
+legend {
+	font-size: 1.5rem;
+	font-style: normal;
+	margin: 0;
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+}
+nav a:hover, nav a:focus {
+	text-decoration: none;
+}
+button {
+	margin-top: 0.8rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	padding: 0.5rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	background: #E97A7A;
+	border-color: #CD2020;
+	color: white;
+	font-family: "arial black";
+}
+button:hover {
+	background: #F2BAC9;
+	border-color: red;
+	color: #CD2020;
+	transition-property: background-color, color;
+	transition-duration: 0.25s;
+}
+/*
+    Common Element End-------------------
+*/
+
 body {
 	background-color: #F1E7D9;
 	margin-left: 5%;
@@ -58,7 +193,7 @@ body {
 .navbar-brand-item span {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 22pt;
 	font-weight: 500;
 	color: #E97A7A;
 	margin-top: 5px;
@@ -101,6 +236,29 @@ body {
 }
 .navbar-brand a:hover > .navbar-brand-item-icon{
     opacity: 1;
+}
+.navbar-subtitle{
+	display: inline-flex;
+	margin-left: 2vh;
+	height: fit-content;
+}
+.navbar-subtitle a, .navbar-subtitle p{
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+	font-size: 12pt;
+	color: #E97A7A;
+	margin-right: 0.5vh;
+	width: fit-content;
+	margin-top: 0.5vh;
+}
+.navbar-subtitle p{
+	margin-top: 1.5vh;
+	margin-right: 0;
+	padding: 0;
+}
+.navbar-subtitle a:hover{
+	text-decoration-line: underline;
+	background: none;
+	color: #CD2020;
 }
 
 .navbar-links {
@@ -200,92 +358,7 @@ nav {
 .styleGuide-header-nav .nav_but:hover {
 	background-color: #F2BAC9;
 }
-/*
-    Common Element -------------------
-*/
-a {
-	padding: 0.5rem;
-	color: #2F2F2F;
-	text-decoration-line: none;
-	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
-}
-a:hover {
-	padding: 0.5rem;
-	background: #F2BAC9;
-	color: #CD2020;
-	text-decoration-line: none;
-	-webkit-transition-property: background-color;
-	transition-property: background-color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-h1 {
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-h2 {
-	margin-top: 6rem;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-h3 {
-	font-style: italic;
-	margin-top: 1rem;
-    font-size: 1.3rem;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-h4 {
-	margin-bottom: 0.25rem;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-    font-size: 1.1rem;
-}
-p {
-	margin-top: 0;
-	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
-	width: 75%;
-}
-p a {
-	text-decoration: underline;
-}
-li, ol, label, input {
-	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
-}
-ul {
-	list-style: none;
-}
-li {
-	margin-bottom: 0.8rem;
-}
-legend {
-	font-size: 1.5rem;
-	font-style: normal;
-	margin: 0;
-	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
-}
-nav a:hover, nav a:focus {
-	text-decoration: none;
-}
-button {
-	margin-top: 0.8rem;
-	margin-bottom: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	padding: 0.5rem;
-	padding-left: 0.8rem;
-	padding-right: 0.8rem;
-	background: #E97A7A;
-	border-color: #CD2020;
-	color: white;
-	font-family: "arial black";
-}
-button:hover {
-	background: #F2BAC9;
-	border-color: red;
-	color: #CD2020;
-	transition-property: background-color, color;
-	transition-duration: 0.25s;
-}
-/*
-    Common Element End-------------------
-*/
+
 
 
 /* 
@@ -304,20 +377,27 @@ button:hover {
 	overflow: hidden;
 }
 .intro-gallery-card img {
-/*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-*/
     width: 100%;
 }
 
+.intro-half-container{
+	display: flex;
+    width: 100%;
+    height: 100%;
+	padding: 15px;
+}
+.intro-halfL, .intro-halfR {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 元素垂直对齐到底部 */
+    padding: 20px; /* 根据需要调整内边距 */
+}
+.intro-halfL{
+	padding-bottom: 15vh;
+}
+
 #scene-container {
-	/* tell our scene container to take up the full page */
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -474,11 +554,103 @@ button:hover {
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
+/* Styling for the Big button */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+.button-item {
+    flex: 1;
+    background-color: #E97A7A;
+    display: flex;
+    flex-direction: column; /* 使内容垂直排列 */
+    justify-content: end;
+    align-items: center; /* 内容水平居中 */
+    margin: 0 10px;
+    margin-top: 15vh;
+    position: relative;
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out, background 0.5s ease-in-out;
+    text-decoration: none; /* 移除链接默认样式 */
+    color: inherit; /* 继承父元素颜色 */
+}
+
+.button-item h1, .button-item h4, .button-item p {
+    text-align: center;
+}
+
+.button-text {
+    color: white;
+    z-index: 1;
+    transition: color 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+}
+
+.button-item h4, .button-item p {
+	color: white;
+    opacity: 0; /* 初始状态透明 */
+    transition: opacity 0.5s ease-in-out; /* 添加透明度过渡效果 */
+}
+.button-item p {
+	margin-bottom: 3vh;
+}
+.button-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.button1::after { background-image: url("../img/index/UXDesign.png"); }
+.button2::after { background-image: url("../img/index/GameDesign.png"); }
+.button3::after { background-image: url("../img/index/VisualDesign.png"); }
+.button4::after { background-image: url("../img/index/audu.png"); }
+.button5::after { background-image: url("../img/index/sfulib2.png"); }
+.button6::after { background-image: url("../img/index/PotBot.png"); }
+
+.button-item:hover {
+    flex: 2;
+}
+.button-item:hover::after {
+    opacity: 1;
+}
+.button-item:hover .button-text {
+    margin-bottom: 0;
+}
+.button-item:hover h4, .button-item:hover p {
+    display: block; /* 悬停时显示 */
+    opacity: 1; /* 悬停时变为不透明 */
+	z-index: 1;
+	color: white;
+}
+/* 当鼠标悬停在按钮容器上时，其他按钮的文字颜色变淡 */
+.button-container:hover .button-item .button-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* 恢复悬停按钮的文字颜色 */
+.button-container:hover .button-item:hover .button-text {
+    color: white;
+}
+/* 当鼠标离开按钮容器时，所有按钮的文字颜色恢复 */
+.button-container:not(:hover) .button-item .button-text {
+    color: white;
+}
+
+
 /* Styling for the navigation button */
 .inputLab-nav {
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
 }
-
 .imgLink-nav {
 	-webkit-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
@@ -505,9 +677,10 @@ button:hover {
 
 
 .projects_intro {
-    padding-top: 30vh;
+    padding-top: 25vh;
     padding-bottom: 30vh;
 	text-align: center;
+	justify-content: center;
 }
 .projects_intro p {
 	width: 60%;
@@ -521,33 +694,62 @@ button:hover {
     align-items: center;
     margin-top: 5vh;
     margin-left: 5vh;
-	padding-top: 25vh;
+	padding-top: 22vh;
 	padding-bottom: 20vh;
+}
+.detail-gallery.zoomed {
+    padding-top: 9vh;
+	height: 85vh;
+}
+.detail-gallery.zoomed .product-img-card {
+    flex: 10;
+}
+.detail-gallery.zoomed .projects_inf {
+    flex: 1;
+    overflow: hidden;
+    display: none;
+	opacity: 0;
 }
 .projects_inf {
     width: 50%;
 	text-align: center;
+	flex: 1;
+	animation: fadeIn 1s;
 }
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	40% { opacity: 0; }
+	100% { opacity: 1; }
+  }
 .projects_inf p {
 	width: 60%;
     display: inline-block;
 }
 .product-img-card {
-	position: relative;
-	z-index: 0;
-    width: 50%;
+    position: relative;
+    width: auto;
     height: 55vh;
-    overflow: hidden;
+    cursor: zoom-in; /* 设置鼠标悬停时显示放大镜 */
+    transition: width 0.5s ease, height 0.5s ease, flex 0.5s ease;
+	flex: 1;
+}
+.product-img-card.zoomed {
+    width: auto;
+    height: 100%;
+	padding-left: 10vh;
+	padding-right: 10vh;
+    cursor: zoom-out; /* 放大后鼠标悬停时显示缩小镜 */
 }
 .product-img-card img {
     width: 100%;
-    height: 92%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 .product-img-card p {
-	width: 100%;
-	text-align: center;
-	margin-top: 1vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 1vh;
 }
 
 .intro_inf{

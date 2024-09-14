@@ -66,3 +66,15 @@ setInterval(function(){
         nextRadio.checked = true;
     }
 }, 6000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imgCards = document.querySelectorAll('.product-img-card');
+
+    imgCards.forEach(function(imgCard) {
+        imgCard.addEventListener('click', function() {
+            const detailGallery = imgCard.closest('.detail-gallery');
+            imgCard.classList.toggle('zoomed');
+            detailGallery.classList.toggle('zoomed');
+        });
+    });
+});
