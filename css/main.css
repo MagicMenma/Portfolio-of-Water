@@ -241,6 +241,7 @@ body {
 	display: inline-flex;
 	margin-left: 2vh;
 	height: fit-content;
+	align-items: flex-end;
 }
 .navbar-subtitle a, .navbar-subtitle p{
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
@@ -251,9 +252,10 @@ body {
 	margin-top: 0.5vh;
 }
 .navbar-subtitle p{
-	margin-top: 1.5vh;
 	margin-right: 0;
-	padding: 0;
+	margin-bottom: 0vh;
+	padding-top: 1.2vh;
+	padding-bottom: 0.8vh;
 }
 .navbar-subtitle a:hover{
 	text-decoration-line: underline;
