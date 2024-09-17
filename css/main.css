@@ -59,6 +59,7 @@ p {
 	margin-top: 0;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
 	width: 75%;
+	font-size: 1.05rem;
 }
 p a {
 	text-decoration: underline;
@@ -71,7 +72,7 @@ p a {
 	font-family: "Playfair Display SemiBold";
 	font-size: 64pt; color: #E97A7A;
 }
-.dynamic-text{
+.dynamic-text, .dynamic-text-main{
 	font-family: "Playfair Display SemiBold";
 	font-size: 64pt; color: #E97A7A;
 	position: relative;
@@ -108,6 +109,33 @@ p a {
         border-color: #E97A7A;
     }
 }
+
+.dynamic-text-main::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #F1E7D9;
+	border-left: 2px solid #E97A7A;
+	animation: typing-main 3s steps(10) 1 forwards, blink-caret 1.5s step-end infinite;
+}
+@keyframes typing-main {
+	35%{
+		left: 0;
+	}
+	50%{
+		left: 28%;
+	}
+	60%{
+		left: 28%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+
 
 li, ol, label, input {
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
@@ -389,13 +417,14 @@ nav {
 	padding: 15px;
 }
 .intro-halfL, .intro-halfR {
-    flex: 1;
+	flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* 元素垂直对齐到底部 */
     padding: 20px; /* 根据需要调整内边距 */
 }
 .intro-halfL{
+	flex: 1;
 	padding-bottom: 15vh;
 }
 
@@ -920,30 +949,30 @@ nav {
 }
 
 footer {
-	padding-top: 5rem;
-	padding-bottom: 3rem;
-	padding-left: 10%;
-	padding-right: 10%;
-	background-color: #E97A7A;
+	width: 100%;
+	padding-top: 5vh;
+	padding-right: 5%;
+	background: linear-gradient(to right, #f1e7d900, #e97a7a);
 	color: white;
 	display: block;
-	margin-top: 15rem;
+	margin-top: 20rem;
 }
 
 .footer-nav {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display: flex;
 }
 
 .footer-text {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
+	display: flex; /* 启用Flexbox布局 */
+	flex-direction: row; /* 垂直排列 */
+	justify-content: flex-end; /* 将子元素对齐到底部 */
+	height: 100%; /* 确保容器占据足够的高度 */
 }
 
-.footer-text h2 {
-	margin-top: 0.5rem;
+.footer-text h1 {
+	margin-top: 0rem;
 }
 
 .footer-link-container {
@@ -951,20 +980,13 @@ footer {
 	-ms-flex: 1;
 	flex: 1;
 	padding-left: 2rem;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-end;
+	justify-content: flex-end; /* 将子元素对齐到底部 */
 }
 
 .copyright{
-    background-color: #E97A7A;
     color: white;
     width: 100%;
     text-align: center;
