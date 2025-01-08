@@ -124,17 +124,23 @@ p a {
 	width: 100%;
 	background-color: #F1E7D9;
 	border-left: 2px solid #E97A7A;
-	animation: typing-main 3s steps(10) 1 forwards, blink-caret 1.5s step-end infinite;
+	animation: typing-main 3s steps(20) 1 forwards, blink-caret 1.5s step-end infinite;
 }
 @keyframes typing-main {
-	35%{
+	20%{
 		left: 0;
 	}
-	50%{
-		left: 28%;
+	25%{
+		left: 10%;
 	}
-	60%{
-		left: 28%;
+	35%{
+		left: 10%;
+	}
+	65%{
+		left: 55%;
+	}
+	70%{
+		left: 55%;
 	}
 	100% {
 		left: 100%;
@@ -821,14 +827,16 @@ nav {
 	-ms-flex: 1;
 	flex: 1;
 	min-width: 200px;
-	padding: 1rem;
+	padding: 0;
 	color: white;
 	background-color: #E97A7A;
 	text-decoration-line: none;
 	font-family: "Century Gothic", Arial, "Arial Black", "Arial Narrow", "sans-serif";
     text-align: left;
 }
-
+.projectsList_description{
+	padding: 1rem;
+}
 .projectsList p{
     color:#FFBCBC;
 }
