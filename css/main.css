@@ -665,6 +665,9 @@ nav {
 .button4::after { background-image: url("../img/index/audu.png"); }
 .button5::after { background-image: url("../img/index/sfulib2.png"); }
 .button6::after { background-image: url("../img/index/PotBot.png"); }
+.button7::after { background-image: url("../img/project4.png"); }
+.button8::after { background-image: url("../img/project3.png"); }
+.button9::after { background-image: url("../img/index/PotBot.png"); }
 
 .button-item:hover {
     flex: 2;
@@ -983,14 +986,14 @@ footer {
 	display: flex;
 }
 
-.footer-deco {
+.footer-text {
 	display: flex; /* 启用Flexbox布局 */
 	flex-direction: row; /* 垂直排列 */
 	justify-content: flex-end; /* 将子元素对齐到底部 */
 	height: 100%; /* 确保容器占据足够的高度 */
 }
 
-.footer-deco h1 {
+.footer-text h1 {
 	margin-top: 0rem;
 }
 
@@ -1220,7 +1223,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-	.footer-deco p {
+	.footer-text p {
 		width: 100%;
 	}
 }
