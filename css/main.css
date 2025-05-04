@@ -277,11 +277,11 @@ body {
 .navbar-brand a:hover > .navbar-brand-item-icon{
     opacity: 1;
 }
-.navbar-subtitle{
+.navbar-subtitle {
 	display: inline-flex;
 	margin-left: 2vh;
 	height: fit-content;
-	align-items: flex-end;
+	align-items: center; /* 修改为 center 以垂直居中对齐 */
 }
 .navbar-subtitle a, .navbar-subtitle p{
 	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
@@ -290,6 +290,15 @@ body {
 	margin-right: 0.5vh;
 	width: fit-content;
 	margin-top: 0.5vh;
+}
+.navbar-subtitle .nav-dropdown a {
+	font-family: "Playfair Display", "Playfair Display Black", "Playfair Display ExtraBold", "Playfair Display Medium", "Playfair Display SemiBold", Cambria, "serif";
+	font-size: 12pt;
+	color: #E97A7A;
+	margin-right: 0.5vh;
+	width: fit-content;
+	padding-top: 0.8vh; /* 添加内边距以调整高度 */
+	padding-bottom: 0.8vh; /* 添加内边距以调整高度 */
 }
 .navbar-subtitle p{
 	margin-right: 0;
