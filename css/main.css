@@ -498,6 +498,7 @@ nav {
     height: 85vh;
     overflow: hidden;
     object-fit: cover;
+    position: relative;
 }
 .intro-gallery-sub{
     width: 500%;
@@ -598,6 +599,39 @@ nav {
 #radio5:checked ~ .navigation-auto .auto-btn5{
     border: 2px solid #CD2020;
     background:#E97A7A;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.nav-arrow.left {
+    left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.nav-arrow.right {
+    right: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 /*
     Pages with Image Slider End ----------
