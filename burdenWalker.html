@@ -84,23 +84,22 @@
         </div>
 
         <div class="scrollPart">
-            <div class="intro-gallery">
-                <div class="intro-gallery-card-about">
-                    <img class="intro-gallery-img" src="img/burdenWalker/welcomePage.png" alt="intro-gallery">
-                </div>
+            <div class="intro-gallery-slider">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_x3LgtkG8Ss?si=uziq_9lr-pKTKeWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     
-
         <div class="porjects-gallery">
             <div class="scrollPart">
                 <div class="projects_intro">
                     <h1 style="margin-bottom: 5vh; padding-top: 5vh; color: #E97A7A; font-style: italic; font-size: 30pt;">Burden Walker - Advanced Game Design</h1>
-                    <p>Burden Walker is a <strong>side-scrolling puzzle adventure</strong> game set in ancient China, developed in Unreal Engine 5. Players take on the role of a porter who must traverse treacherous landscapes while carrying exaggeratedly stacked cargo. The game blends traditional aesthetics with physics-based challenge mechanics. The visual identity draws <strong>inspiration from southern Chinese karst landscapes and folk culture</strong>, creating an immersive and poetic game world that supports both storytelling and gameplay.</p>
+                    <p>Burden Walker is a single player <strong>side-scrolling puzzle adventure</strong> game set in ancient China which tells the story of a porter who, after losing his horse, still manages to get all the cargo to the finish line by his own efforts. Player's goal is to deliver all cargo safely to the capital city, Guilin. The game blends traditional aesthetics with physics-based challenge mechanics. The visual identity draws <strong>inspiration from southern Chinese karst landscapes and folk culture</strong>, creating an immersive and poetic game world that supports both storytelling and gameplay.</p>
                     <p><strong>Instructor:</strong> Eric Yang</p>
                     <p><strong>TA:</strong> Jonathan Newman</p>
                     <p><strong>Independent Game Designer & Developer:</strong><br>
-                        <strong>Walter Xu</strong> ( Game Designer )</p>
+                        <strong style="color: #E97A7A;">Walter Xu</strong></p>
+                    <p><strong>Duration:</strong> 3 Months</p>
+                    <p><strong>Game Engine:</strong> Unreal Engine 5</p>
                 </div>
             </div>
 
@@ -111,8 +110,8 @@
                         <p>The core mechanic revolves around <strong>weight and balance</strong>. Players must choose which cargo to carry, stack it strategically, and maintain physical balance as they navigate narrow paths, swinging bridges, and sudden terrain changes. Each item has a different shape and value, and the player must make careful decisions based on limited backpack space. At the end of each level, the carried cargo is evaluated and scored, with a rating that reflects the player’s efficiency and choices. This adds an extra layer of <strong>replayability</strong>, motivating players to improve their performance in future runs.</p>
                     </div>
                     <div class="product-img-card">
-                        <img class="product-img" src="img/burdenWalker/" alt="intro-gallery">
-                        <p>Balancing Cargo</p>
+                        <img class="product-img" src="img/burdenWalker/coreLoop.png" alt="intro-gallery">
+                        <p>Core Loop</p>
                     </div>
                 </div>
             </div>
@@ -123,8 +122,8 @@
                         <p><strong>Quick-Time Events (QTEs)</strong> are triggered when the player loses control, testing reflexes to recover or risk losing progress. This system introduces tension and replayability while visually emphasizing the burden the character carries—both physically and emotionally. Despite its challenge, the gameplay also <strong>produces unexpected moments of humor and joy</strong>, creating a lighthearted, memorable experience as players wobble and scramble to keep their load intact.</p>
                     </div>
                     <div class="product-img-card">
-                        <img class="product-img" src="img/burdenWalker/" alt="intro-gallery">
-                        <p>Balancing Cargo</p>
+                        <img class="product-img" src="img/burdenWalker/qte.gif" alt="intro-gallery">
+                        <p>QTE System / Balancing Cargo</p>
                     </div>
                 </div>
             </div>
@@ -194,7 +193,7 @@
                         </div>
         
                         <!--automatic control-->
-                        <div class="navigation-auto">
+                        <div class="navigation-auto" style="position: absolute; left: 50%; transform: translateX(-50%);">
                             <div class="auto-btn1"></div>
                             <div class="auto-btn2"></div>
                             <div class="auto-btn3"></div>
@@ -202,7 +201,7 @@
                             <div class="auto-btn5"></div>
                         </div>
                         <!--automatic control-->
-                        <div class="navigation-manual">
+                        <div class="navigation-manual" style="position: absolute; left: 50%; transform: translateX(-50%);">
                             <label for="radio1" class="manual-btn"></label>
                             <label for="radio2" class="manual-btn"></label>
                             <label for="radio3" class="manual-btn"></label>
@@ -213,10 +212,52 @@
                 </div>
             </div>
 
+            <div class="scrollPart">
+                <div class="detail-gallery">
+                    <div class="projects_inf">
+                        <h1>UI Design</h1>
+                        <p>The UI design of Burden Walker draws inspiration from <strong>the aesthetics of ancient Chinese handwritten documents</strong>. Interfaces are stylized with ink brush textures and red seal-like highlights, evoking the look of hand-painted scrolls. <strong>The interface minimizes reliance on modern textual overlays</strong>. Key interactions are communicated through visual cues and spatial arrangements, reducing on-screen distractions. The in-game map, shown here, mimics a traditional travel scroll, visually guiding the player’s journey without relying on detailed instructions or modern UI conventions.</p>
+                    </div>
+                    <div class="product-img-card">
+                        <img class="product-img" src="img/burdenWalker/map.png" alt="intro-gallery">
+                        <p>Map Design</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="scrollPart">
+                <div class="intro-gallery"  style="margin-top: 10%; padding-top: 5%;">
+                    <div class="intro-gallery-card-about">
+                        <img class="intro-gallery-img" src="img/burdenWalker/cargoUI.png" alt="intro-gallery">
+                    </div>
+                </div>
+            </div>
 
+            <div class="scrollPart">
+                <div class="detail-gallery">
+                    <div class="projects_inf">
+                        <h1>Technical Implementation</h1>
+                        <p>The development using Unreal Engine 5.4, with a focus on implementing gameplay systems through the Blueprint visual scripting framework. This allowed for rapid prototyping, clear logic structuring, and frequent iteration during development. Core mechanics—including cargo stacking, real-time balance detection, terrain-based challenge triggers and etc. were all created using modular Blueprint components.</p>
+                    </div>
+                    <div class="product-img-card">
+                        <img class="product-img" src="img/burdenWalker/blueprint.png" alt="intro-gallery">
+                        <p>Player Blueprint Example <a href="img/burdenWalker/blueprint1.png" target="_blank">Original</a></p>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="scrollPart">
+                <div class="detail-gallery">
+                    <div class="projects_inf">
+                        <p>One of the most central systems I developed was a <strong>custom inventory and stacking interaction logic that bridges 3D world objects and 2D UI elements</strong>. This system allows players to drag 3D cargo models directly into the inventory interface, where they are represented as 2D icons. Each cargo item can be manually arranged within a limited grid-like inventory space, with support for reordering and auto-organizing.</p>
+                        <p>Once a 2D icon is placed in the inventory, the corresponding 3D object is instantiated and physically attached to the player’s backpack in the world space, forming physics constraints with other cargo and the backpack itself. Conversely, players can also drag a 2D icon out of the inventory UI, causing the associated 3D object to materialize on the ground. This system enables seamless conversion between 3D and 2D representations of cargo and supports saving and loading states, allowing inventory data and object configurations to persist across sessions. </p>
+                    </div>
+                    <div class="product-img-card">
+                        <img class="product-img" src="img/burdenWalker/.png" alt="Inventory Interaction">
+                        <p>Inventory Interaction</p>
+                    </div>
+                </div>
+            </div>
 
 
 
