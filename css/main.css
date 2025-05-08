@@ -711,6 +711,8 @@ nav {
 .button7::after { background-image: url("../img/project4.png"); }
 .button8::after { background-image: url("../img/project3.png"); }
 .button9::after { background-image: url("../img/index/PotBot.png"); }
+.button10::after { background-image: url("../img/thesunside/project2.png"); }
+.button11::after { background-image: url("../img/index/VisualDesign.png"); }
 
 .button-item:hover {
     flex: 2;
