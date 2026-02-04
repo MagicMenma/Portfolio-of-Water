@@ -1237,18 +1237,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-	.projectsList_container {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-	}
-    
-    .intro-gallery-img {
-        position: relative;
-        overflow: hidden;
-        height: 80vh;
-        object-fit: cover;
-        object-position: 100% 100%;
-    }
     
     .workshop-gallery{
         display: flex; 
@@ -1273,6 +1261,18 @@ footer {
 	}
 }
 @media screen and (max-width: 800px) {
+	.projectsList_container {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+    
+    .intro-gallery-img {
+        position: relative;
+        overflow: hidden;
+        height: 80vh;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
     /* 1. 改变容器方向 */
     .detail-gallery {
         display: flex;
