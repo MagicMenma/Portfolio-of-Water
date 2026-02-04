@@ -1273,23 +1273,68 @@ footer {
 	}
 }
 @media screen and (max-width: 800px) {
-    .product-info-container {
-        flex-direction: column; /* 核心：改为垂直排列 */
-        align-items: center;    /* 居中显示 */
+    /* 1. 改变容器方向 */
+    .detail-gallery {
+        display: flex;
+        flex-direction: column !important; /* 强制改为垂直排列 */
+        height: auto !important;          /* 手机端高度随内容自适应 */
+        padding-top: 5vh !important;      /* 减少顶部间距，手机端不需要预留那么多空间 */
+        padding-bottom: 5vh;
+        margin-left: 0 !important;        /* 移除左外边距，防止内容偏向一侧 */
+        margin-top: 0 !important;
     }
 
+    /* 2. 确保子元素占满宽度 */
     .projects_inf, 
     .product-img-card {
-        width: 100% !important; /* 宽度占满手机屏幕 */
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding: 10px;          /* 增加内边距防止贴边 */
+        width: 100% !important;
+        flex: none !important;            /* 取消电脑端的比例设置 */
+        padding: 20px;
+        box-sizing: border-box;           /* 防止内边距撑破宽度 */
     }
 
-    .product-img {
-        width: 100% !important; /* 确保图片在手机上自动缩放 */
-        height: auto;
+    /* 3. 针对文字部分的排版 */
+    .projects_inf {
+        text-align: center; /* 核心：让所有文字和标题居中 */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 确保 flex 子元素也居中 */
+        padding: 20px 0%; /* 左右留出 10% 的空白，增加高级感 */
     }
+
+	.projects_inf h1 {
+        margin-bottom: 15px;
+        font-size: 1.8rem; /* 稍微缩小手机端标题，防止换行太碎 */
+    }
+
+    .projects_inf p {
+        text-align: center; /* 确保段落文字居中 */
+        line-height: 1.6;   /* 增加行高，方便手机阅读 */
+        max-width: 500px;   /* 防止段落过宽，保持阅读舒适度 */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* 4. 针对图片卡片的排版 */
+    .product-img-card {
+        order: 2;                         /* 强制图片排在第二位 */
+        text-align: center;
+    }
+
+    /* 5. 确保图片在手机上不会溢出 */
+    .product-img {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+    }
+
+    /* 6. 处理你提到的 zoomed 缩放模式在手机上的显示 */
+    .detail-gallery.zoomed .projects_inf {
+        display: block !important;        /* 手机端建议不要隐藏文字，保证可读性 */
+        opacity: 1 !important;
+        flex: none !important;
+    }
+	
 	
 	.about-gallery {
 		display: -webkit-box;
@@ -1329,6 +1374,7 @@ footer {
 	}
 }
 
+/* 针对手机端的媒体查询 */
 @media screen and (max-width: 600px) {
     body{
         margin-left: 0;
@@ -1350,10 +1396,8 @@ footer {
     .styleGuide-header-nav {
 		display: none;
 	}
-}
 
-/* 针对手机端的媒体查询 */
-@media screen and (max-width: 600px) {
+
     /* 让按钮容器变成垂直堆叠 */
     .button-container { 
         display: flex;
