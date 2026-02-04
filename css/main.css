@@ -1273,7 +1273,25 @@ footer {
 	}
 }
 @media screen and (max-width: 800px) {
-    .about-gallery {
+    .product-info-container {
+        flex-direction: column; /* 核心：改为垂直排列 */
+        align-items: center;    /* 居中显示 */
+    }
+
+    .projects_inf, 
+    .product-img-card {
+        width: 100% !important; /* 宽度占满手机屏幕 */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 10px;          /* 增加内边距防止贴边 */
+    }
+
+    .product-img {
+        width: 100% !important; /* 确保图片在手机上自动缩放 */
+        height: auto;
+    }
+	
+	.about-gallery {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1334,4 +1352,40 @@ footer {
 	}
 }
 
+/* 针对手机端的媒体查询 */
+@media screen and (max-width: 600px) {
+    /* 让按钮容器变成垂直堆叠 */
+    .button-container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 
+    .button-item {
+        width: 90% !important; /* 宽度占满屏幕 */
+        margin-bottom: 20px;
+        height: auto !important; /* 让高度自适应内容 */
+    }
+
+    .button-text {
+        font-size: 1.5rem !important; /* 调大字体，方便手指点击 */
+        padding: 20px 0 !important;
+    }
+
+	.footer-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-text img {
+        height: 20vh !important; /* 缩小装饰图高度 */
+        margin-bottom: 20px;
+    }
+
+    .footer-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* 增加链接之间的间距，防止误触 */
+    }
+}
